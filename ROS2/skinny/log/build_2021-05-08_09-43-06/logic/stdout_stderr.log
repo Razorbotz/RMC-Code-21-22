@@ -1,0 +1,39 @@
+[35m[1mScanning dependencies of target logic_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/logic_node.dir/src/Automation.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/logic_node.dir/src/logic_node.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/logic_node.dir/src/Automation1.cpp.o[0m
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:[m[K In member function ‘[01m[KEulerAngles Automation::toEulerAngles(Quaternion)[m[K’:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:43:24:[m[K [01;31m[Kerror: [m[K‘[01m[Katan2[m[K’ is not a member of ‘[01m[Kstd[m[K’
+     angles.roll = std::[01;31m[Katan2[m[K(sinr_cosp, cosr_cosp);
+                        [01;31m[K^~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:48:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcopysign[m[K’ is not a member of ‘[01m[Kstd[m[K’
+         angles.pitch = std::[01;31m[Kcopysign[m[K(M_PI / 2, sinp); // use 90 degrees if out of range
+                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:48:29:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcopy_n[m[K’
+         angles.pitch = std::[01;36m[Kcopysign[m[K(M_PI / 2, sinp); // use 90 degrees if out of range
+                             [01;36m[K^~~~~~~~[m[K
+                             [32m[Kcopy_n[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:48:38:[m[K [01;31m[Kerror: [m[K‘[01m[KM_PI[m[K’ was not declared in this scope
+         angles.pitch = std::copysign([01;31m[KM_PI[m[K / 2, sinp); // use 90 degrees if out of range
+                                      [01;31m[K^~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:48:38:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KP_PID[m[K’
+         angles.pitch = std::copysign([01;36m[KM_PI[m[K / 2, sinp); // use 90 degrees if out of range
+                                      [01;36m[K^~~~[m[K
+                                      [32m[KP_PID[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:50:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kasin[m[K’ is not a member of ‘[01m[Kstd[m[K’
+         angles.pitch = std::[01;31m[Kasin[m[K(sinp);
+                             [01;31m[K^~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:50:29:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kwcin[m[K’
+         angles.pitch = std::[01;36m[Kasin[m[K(sinp);
+                             [01;36m[K^~~~[m[K
+                             [32m[Kwcin[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:55:23:[m[K [01;31m[Kerror: [m[K‘[01m[Katan2[m[K’ is not a member of ‘[01m[Kstd[m[K’
+     angles.yaw = std::[01;31m[Katan2[m[K(siny_cosp, cosy_cosp);
+                       [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/logic_node.dir/src/Automation.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+CMakeFiles/logic_node.dir/build.make:86: recipe for target 'CMakeFiles/logic_node.dir/src/Automation.cpp.o' failed
+CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/logic_node.dir/all' failed
+make[1]: *** [CMakeFiles/logic_node.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

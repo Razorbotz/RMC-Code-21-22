@@ -1,0 +1,764 @@
+[0.000000] (-) TimerEvent: {}
+[0.003608] (excavation) JobQueued: {'identifier': 'excavation', 'dependencies': OrderedDict()}
+[0.007662] (messages) JobQueued: {'identifier': 'messages', 'dependencies': OrderedDict()}
+[0.007896] (autonomy) JobQueued: {'identifier': 'autonomy', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.008111] (communication) JobQueued: {'identifier': 'communication', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.008321] (logic) JobQueued: {'identifier': 'logic', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.008501] (power_distribution_panel) JobQueued: {'identifier': 'power_distribution_panel', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.008675] (talon) JobQueued: {'identifier': 'talon', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.008842] (zed_tracking) JobQueued: {'identifier': 'zed_tracking', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.009004] (messages) JobStarted: {'identifier': 'messages'}
+[0.055826] (excavation) JobStarted: {'identifier': 'excavation'}
+[0.058823] (-) TimerEvent: {}
+[0.096972] (messages) JobProgress: {'identifier': 'messages', 'progress': 'cmake'}
+[0.100215] (messages) JobProgress: {'identifier': 'messages', 'progress': 'build'}
+[0.104482] (messages) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/messages', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/messages', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/messages'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/eloquent')]), 'shell': False}
+[0.159167] (-) TimerEvent: {}
+[0.260268] (-) TimerEvent: {}
+[0.361550] (-) TimerEvent: {}
+[0.462644] (-) TimerEvent: {}
+[0.563502] (-) TimerEvent: {}
+[0.664666] (-) TimerEvent: {}
+[0.765597] (-) TimerEvent: {}
+[0.866336] (-) TimerEvent: {}
+[0.967130] (-) TimerEvent: {}
+[1.067855] (-) TimerEvent: {}
+[1.168907] (-) TimerEvent: {}
+[1.269746] (-) TimerEvent: {}
+[1.370465] (-) TimerEvent: {}
+[1.471267] (-) TimerEvent: {}
+[1.572056] (-) TimerEvent: {}
+[1.674061] (-) TimerEvent: {}
+[1.688606] (messages) StdoutLine: {'line': b'[  0%] Built target messages__cpp\n'}
+[1.689701] (messages) StdoutLine: {'line': b'[ 12%] Built target messages__rosidl_generator_c\n'}
+[1.690994] (messages) StdoutLine: {'line': b'[ 36%] Built target messages__rosidl_typesupport_introspection_cpp\n'}
+[1.692362] (messages) StdoutLine: {'line': b'[ 36%] Built target messages__rosidl_typesupport_introspection_c\n'}
+[1.694856] (messages) StdoutLine: {'line': b'[ 48%] Built target messages__rosidl_typesupport_fastrtps_cpp\n'}
+[1.696409] (messages) StdoutLine: {'line': b'[ 60%] Built target messages__rosidl_typesupport_cpp\n'}
+[1.696932] (messages) StdoutLine: {'line': b'[ 72%] Built target messages__rosidl_typesupport_fastrtps_c\n'}
+[1.701659] (messages) StdoutLine: {'line': b'[ 84%] Built target messages__rosidl_typesupport_c\n'}
+[1.702464] (messages) StdoutLine: {'line': b'[ 84%] Built target messages\n'}
+[1.703075] (messages) StdoutLine: {'line': b'[ 85%] Built target messages__py\n'}
+[1.703739] (messages) StdoutLine: {'line': b'[ 96%] Built target messages__python\n'}
+[1.707141] (messages) StdoutLine: {'line': b'[ 98%] Built target messages__rosidl_typesupport_c__pyext\n'}
+[1.708194] (messages) StdoutLine: {'line': b'[100%] Built target messages__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.709303] (messages) CommandEnded: {'returncode': 0}
+[1.712452] (excavation) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/excavation', 'build', '--build-base', '/home/team/SoftwareDevelopment/ROS2/skinny/build/excavation/build', 'install', '--prefix', '/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation', '--record', '/home/team/SoftwareDevelopment/ROS2/skinny/build/excavation/install.log', '--single-version-externally-managed'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/src/excavation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/team', 'USER': 'team', 'SSH_CLIENT': '192.168.1.3 56746 22', 'LD_LIBRARY_PATH': '/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib', 'SHLVL': '1', 'HOME': '/home/team', 'OLDPWD': '/home/team/SoftwareDevelopment/ROS2/skinny/src', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'eloquent', 'LOGNAME': 'team', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '5', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:12.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/eloquent', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/team/SoftwareDevelopment/ROS2/skinny/build/excavation', 'SSH_CONNECTION': '192.168.1.3 56746 192.168.1.4 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib', 'COLCON': '1'}, 'shell': False}
+[1.774289] (-) TimerEvent: {}
+[1.875118] (-) TimerEvent: {}
+[1.975873] (-) TimerEvent: {}
+[2.076613] (-) TimerEvent: {}
+[2.177372] (-) TimerEvent: {}
+[2.278732] (-) TimerEvent: {}
+[2.324996] (messages) JobProgress: {'identifier': 'messages', 'progress': 'install'}
+[2.370609] (messages) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/messages', '--target', 'install', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/messages', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/messages'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/eloquent')]), 'shell': False}
+[2.378899] (-) TimerEvent: {}
+[2.479823] (-) TimerEvent: {}
+[2.580613] (-) TimerEvent: {}
+[2.581511] (messages) StdoutLine: {'line': b'[  0%] Built target messages__cpp\n'}
+[2.596157] (messages) StdoutLine: {'line': b'[ 12%] Built target messages__rosidl_generator_c\n'}
+[2.680848] (-) TimerEvent: {}
+[2.695886] (messages) StdoutLine: {'line': b'[ 24%] Built target messages__rosidl_typesupport_introspection_cpp\n'}
+[2.719008] (messages) StdoutLine: {'line': b'[ 36%] Built target messages__rosidl_typesupport_introspection_c\n'}
+[2.723581] (messages) StdoutLine: {'line': b'[ 48%] Built target messages__rosidl_typesupport_fastrtps_cpp\n'}
+[2.781019] (-) TimerEvent: {}
+[2.846719] (messages) StdoutLine: {'line': b'[ 71%] Built target messages__rosidl_typesupport_cpp\n'}
+[2.847713] (messages) StdoutLine: {'line': b'[ 72%] Built target messages__rosidl_typesupport_fastrtps_c\n'}
+[2.881190] (-) TimerEvent: {}
+[2.967677] (messages) StdoutLine: {'line': b'[ 84%] Built target messages__rosidl_typesupport_c\n'}
+[2.981514] (-) TimerEvent: {}
+[3.045765] (messages) StdoutLine: {'line': b'[ 84%] Built target messages\n'}
+[3.081643] (-) TimerEvent: {}
+[3.128846] (messages) StdoutLine: {'line': b'[ 85%] Built target messages__py\n'}
+[3.181893] (-) TimerEvent: {}
+[3.201469] (excavation) StdoutLine: {'line': b'running egg_info\n'}
+[3.204439] (excavation) StdoutLine: {'line': b'writing ../../build/excavation/excavation.egg-info/PKG-INFO\n'}
+[3.206686] (excavation) StdoutLine: {'line': b'writing dependency_links to ../../build/excavation/excavation.egg-info/dependency_links.txt\n'}
+[3.207456] (excavation) StdoutLine: {'line': b'writing entry points to ../../build/excavation/excavation.egg-info/entry_points.txt\n'}
+[3.208076] (excavation) StdoutLine: {'line': b'writing requirements to ../../build/excavation/excavation.egg-info/requires.txt\n'}
+[3.208656] (excavation) StdoutLine: {'line': b'writing top-level names to ../../build/excavation/excavation.egg-info/top_level.txt\n'}
+[3.268655] (messages) StdoutLine: {'line': b'[ 96%] Built target messages__python\n'}
+[3.282064] (-) TimerEvent: {}
+[3.382882] (-) TimerEvent: {}
+[3.384350] (messages) StdoutLine: {'line': b'[ 98%] Built target messages__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.393300] (messages) StdoutLine: {'line': b'[100%] Built target messages__rosidl_typesupport_c__pyext\n'}
+[3.409380] (excavation) StdoutLine: {'line': b"reading manifest file '../../build/excavation/excavation.egg-info/SOURCES.txt'\n"}
+[3.416658] (excavation) StdoutLine: {'line': b"writing manifest file '../../build/excavation/excavation.egg-info/SOURCES.txt'\n"}
+[3.418288] (excavation) StdoutLine: {'line': b'running build\n'}
+[3.419006] (excavation) StdoutLine: {'line': b'running build_py\n'}
+[3.420000] (excavation) StdoutLine: {'line': b'running install\n'}
+[3.422085] (excavation) StdoutLine: {'line': b'running install_lib\n'}
+[3.427088] (excavation) StdoutLine: {'line': b'running install_data\n'}
+[3.430055] (excavation) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.440402] (excavation) StdoutLine: {'line': b"removing '/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/python3.6/site-packages/excavation-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[3.441879] (excavation) StdoutLine: {'line': b'Copying ../../build/excavation/excavation.egg-info to /home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/python3.6/site-packages/excavation-0.0.0-py3.6.egg-info\n'}
+[3.446127] (excavation) StdoutLine: {'line': b'running install_scripts\n'}
+[3.472616] (messages) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[3.483060] (-) TimerEvent: {}
+[3.509665] (messages) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.510739] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/ament_index/resource_index/rosidl_interfaces/messages\n'}
+[3.511787] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages\n'}
+[3.512728] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg\n'}
+[3.513626] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position.hpp\n'}
+[3.514522] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__traits.hpp\n'}
+[3.515251] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__traits.hpp\n'}
+[3.516005] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__struct.hpp\n'}
+[3.516880] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power.hpp\n'}
+[3.517776] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state.hpp\n'}
+[3.518592] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out.hpp\n'}
+[3.519369] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__traits.hpp\n'}
+[3.520174] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera.hpp\n'}
+[3.521012] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__struct.hpp\n'}
+[3.521929] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__traits.hpp\n'}
+[3.522561] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out.hpp\n'}
+[3.523133] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__struct.hpp\n'}
+[3.523712] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__struct.hpp\n'}
+[3.524191] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__traits.hpp\n'}
+[3.524661] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__traits.hpp\n'}
+[3.525211] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__traits.hpp\n'}
+[3.525774] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state.hpp\n'}
+[3.526336] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state.hpp\n'}
+[3.526931] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__traits.hpp\n'}
+[3.527573] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__struct.hpp\n'}
+[3.528449] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__struct.hpp\n'}
+[3.529322] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__traits.hpp\n'}
+[3.530214] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__struct.hpp\n'}
+[3.530926] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command.hpp\n'}
+[3.531441] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__struct.hpp\n'}
+[3.532034] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state.hpp\n'}
+[3.532644] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__traits.hpp\n'}
+[3.533318] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__struct.hpp\n'}
+[3.534432] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__struct.hpp\n'}
+[3.535377] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages\n'}
+[3.536064] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg\n'}
+[3.536595] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera.h\n'}
+[3.537322] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out.h\n'}
+[3.538095] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__struct.h\n'}
+[3.538832] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command.h\n'}
+[3.539639] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__struct.h\n'}
+[3.540489] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state.h\n'}
+[3.541208] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state.h\n'}
+[3.541954] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__type_support.h\n'}
+[3.542897] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out.h\n'}
+[3.544054] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__type_support.h\n'}
+[3.545013] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__type_support.h\n'}
+[3.545912] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__struct.h\n'}
+[3.546592] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.547539] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__struct.h\n'}
+[3.548229] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__functions.c\n'}
+[3.548900] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__type_support.h\n'}
+[3.549629] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__functions.h\n'}
+[3.550325] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__type_support.h\n'}
+[3.550975] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position.h\n'}
+[3.551646] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__functions.c\n'}
+[3.552316] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__functions.c\n'}
+[3.552954] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__struct.h\n'}
+[3.553628] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__functions.h\n'}
+[3.554281] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__functions.h\n'}
+[3.554907] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__functions.h\n'}
+[3.555635] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__functions.h\n'}
+[3.556306] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__struct.h\n'}
+[3.556936] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__type_support.h\n'}
+[3.557601] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__struct.h\n'}
+[3.558381] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__functions.c\n'}
+[3.559035] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__functions.c\n'}
+[3.559657] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__functions.c\n'}
+[3.560296] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__functions.h\n'}
+[3.560935] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__type_support.h\n'}
+[3.561611] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__type_support.h\n'}
+[3.562307] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__functions.h\n'}
+[3.562963] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state.h\n'}
+[3.563608] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__struct.h\n'}
+[3.564258] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__type_support.h\n'}
+[3.564852] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__functions.c\n'}
+[3.565462] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__functions.c\n'}
+[3.566053] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__struct.h\n'}
+[3.566616] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__struct.h\n'}
+[3.567171] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__functions.h\n'}
+[3.567713] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__functions.h\n'}
+[3.568319] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__type_support.h\n'}
+[3.568949] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__functions.c\n'}
+[3.569626] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__functions.c\n'}
+[3.570265] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state.h\n'}
+[3.570870] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__functions.h\n'}
+[3.571481] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power.h\n'}
+[3.572096] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/environment/library_path.sh\n'}
+[3.572711] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/environment/library_path.dsv\n'}
+[3.573348] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_generator_c.so\n'}
+[3.574059] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_typesupport_c.so\n'}
+[3.574751] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_typesupport_cpp.so\n'}
+[3.575369] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages\n'}
+[3.575974] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg\n'}
+[3.576575] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__type_support.c\n'}
+[3.577236] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__rosidl_typesupport_introspection_c.h\n'}
+[3.577964] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__type_support.c\n'}
+[3.578590] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__rosidl_typesupport_introspection_c.h\n'}
+[3.579246] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__type_support.c\n'}
+[3.579837] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__rosidl_typesupport_introspection_c.h\n'}
+[3.580420] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__type_support.c\n'}
+[3.580979] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__type_support.c\n'}
+[3.581607] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__type_support.c\n'}
+[3.582223] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__rosidl_typesupport_introspection_c.h\n'}
+[3.582930] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__rosidl_typesupport_introspection_c.h\n'}
+[3.583541] (-) TimerEvent: {}
+[3.584126] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__rosidl_typesupport_introspection_c.h\n'}
+[3.584810] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__type_support.c\n'}
+[3.585501] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__rosidl_typesupport_introspection_c.h\n'}
+[3.586162] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__type_support.c\n'}
+[3.586778] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.587362] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__rosidl_typesupport_introspection_c.h\n'}
+[3.587941] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__rosidl_typesupport_introspection_c.h\n'}
+[3.588563] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__type_support.c\n'}
+[3.589184] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__rosidl_typesupport_introspection_c.h\n'}
+[3.589860] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__type_support.c\n'}
+[3.590491] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_typesupport_introspection_c.so\n'}
+[3.591148] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages\n'}
+[3.591766] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg\n'}
+[3.592351] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__type_support.cpp\n'}
+[3.592959] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__type_support.cpp\n'}
+[3.593588] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.594195] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.594796] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.595418] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__type_support.cpp\n'}
+[3.596035] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.596657] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.597323] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.598015] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__type_support.cpp\n'}
+[3.598621] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__type_support.cpp\n'}
+[3.599250] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__type_support.cpp\n'}
+[3.599847] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__type_support.cpp\n'}
+[3.600455] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.601048] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__type_support.cpp\n'}
+[3.601748] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__type_support.cpp\n'}
+[3.602350] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__type_support.cpp\n'}
+[3.602944] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.603536] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.604102] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.604654] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_typesupport_introspection_cpp.so\n'}
+[3.605190] (excavation) StdoutLine: {'line': b'Installing excavation_node script to /home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/excavation\n'}
+[3.605844] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages\n'}
+[3.606499] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg\n'}
+[3.607111] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__rosidl_typesupport_fastrtps_c.h\n'}
+[3.607688] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__rosidl_typesupport_fastrtps_c.h\n'}
+[3.608258] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__rosidl_typesupport_fastrtps_c.h\n'}
+[3.608802] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__rosidl_typesupport_fastrtps_c.h\n'}
+[3.609330] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__rosidl_typesupport_fastrtps_c.h\n'}
+[3.609949] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__rosidl_typesupport_fastrtps_c.h\n'}
+[3.610528] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.611097] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__rosidl_typesupport_fastrtps_c.h\n'}
+[3.611663] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__rosidl_typesupport_fastrtps_c.h\n'}
+[3.612219] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__rosidl_typesupport_fastrtps_c.h\n'}
+[3.612774] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__rosidl_typesupport_fastrtps_c.h\n'}
+[3.613332] (excavation) StdoutLine: {'line': b"writing list of installed files to '/home/team/SoftwareDevelopment/ROS2/skinny/build/excavation/install.log'\n"}
+[3.613988] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_typesupport_fastrtps_c.so\n'}
+[3.614563] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages\n'}
+[3.615156] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg\n'}
+[3.615818] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.616497] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.617199] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/button_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.617963] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/axis_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.618578] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/camera__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.619160] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.619737] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.620348] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/joystick_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.620925] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/dds_fastrtps\n'}
+[3.621521] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.622107] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/victor_out__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.622695] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.623279] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.623846] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/environment/pythonpath.sh\n'}
+[3.624443] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/environment/pythonpath.dsv\n'}
+[3.624997] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/__init__.py\n'}
+[3.646258] (excavation) CommandEnded: {'returncode': 0}
+[3.683893] (-) TimerEvent: {}
+[3.716287] (excavation) JobEnded: {'identifier': 'excavation', 'rc': 0}
+[3.730158] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg\n'}
+[3.731279] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_hat_state.py\n'}
+[3.732087] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_power_s.c\n'}
+[3.732848] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_camera_s.c\n'}
+[3.733385] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/__init__.py\n'}
+[3.733924] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_camera.py\n'}
+[3.734494] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_power.py\n'}
+[3.734966] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_hat_state_s.c\n'}
+[3.735412] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_talon_out.py\n'}
+[3.735842] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_zed_position.py\n'}
+[3.736286] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_victor_out_s.c\n'}
+[3.736828] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_joystick_command_s.c\n'}
+[3.737268] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_zed_position_s.c\n'}
+[3.737840] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_axis_state.py\n'}
+[3.738385] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_axis_state_s.c\n'}
+[3.738832] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_button_state.py\n'}
+[3.739398] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_victor_out.py\n'}
+[3.739989] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_key_state_s.c\n'}
+[3.740540] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_key_state.py\n'}
+[3.741088] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_talon_out_s.c\n'}
+[3.741830] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_button_state_s.c\n'}
+[3.742397] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/msg/_joystick_command.py\n'}
+[3.742961] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/messages_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[3.743525] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages/messages/messages_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[3.744139] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__python.so\n'}
+[3.744635] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/AxisState.idl\n'}
+[3.745203] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/Camera.idl\n'}
+[3.745860] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/JoystickCommand.idl\n'}
+[3.746433] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/Power.idl\n'}
+[3.747039] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/VictorOut.idl\n'}
+[3.747586] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/ButtonState.idl\n'}
+[3.748118] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/HatState.idl\n'}
+[3.748683] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/KeyState.idl\n'}
+[3.749248] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/TalonOut.idl\n'}
+[3.749874] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/ZedPosition.idl\n'}
+[3.750407] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/AxisState.msg\n'}
+[3.750916] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/Camera.msg\n'}
+[3.751434] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/JoystickCommand.msg\n'}
+[3.751958] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/Power.msg\n'}
+[3.752443] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/VictorOut.msg\n'}
+[3.752940] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/ButtonState.msg\n'}
+[3.753540] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/HatState.msg\n'}
+[3.754086] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/KeyState.msg\n'}
+[3.754574] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/TalonOut.msg\n'}
+[3.755099] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/msg/ZedPosition.msg\n'}
+[3.755608] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/ament_index/resource_index/package_run_dependencies/messages\n'}
+[3.756111] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/ament_index/resource_index/parent_prefix_path/messages\n'}
+[3.756606] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/environment/ament_prefix_path.sh\n'}
+[3.757111] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/environment/ament_prefix_path.dsv\n'}
+[3.757674] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/environment/path.sh\n'}
+[3.758182] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/environment/path.dsv\n'}
+[3.758672] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/local_setup.bash\n'}
+[3.759372] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/local_setup.sh\n'}
+[3.760373] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/local_setup.zsh\n'}
+[3.761584] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/local_setup.dsv\n'}
+[3.770135] (messages) StdoutLine: {'line': b'-- Installing: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/package.dsv\n'}
+[3.770825] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/ament_index/resource_index/packages/messages\n'}
+[3.771441] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/cmake/rosidl_cmake-extras.cmake\n'}
+[3.772008] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.772629] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.773282] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.773907] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/cmake/messagesConfig.cmake\n'}
+[3.774547] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/cmake/messagesConfig-version.cmake\n'}
+[3.775173] (messages) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/package.xml\n'}
+[3.775792] (messages) CommandEnded: {'returncode': 0}
+[3.785290] (-) TimerEvent: {}
+[3.886466] (-) TimerEvent: {}
+[3.987838] (-) TimerEvent: {}
+[4.088819] (-) TimerEvent: {}
+[4.190566] (-) TimerEvent: {}
+[4.291562] (-) TimerEvent: {}
+[4.392393] (-) TimerEvent: {}
+[4.493379] (-) TimerEvent: {}
+[4.595751] (-) TimerEvent: {}
+[4.628933] (messages) JobEnded: {'identifier': 'messages', 'rc': 0}
+[4.638498] (autonomy) JobStarted: {'identifier': 'autonomy'}
+[4.648246] (communication) JobStarted: {'identifier': 'communication'}
+[4.676975] (logic) JobStarted: {'identifier': 'logic'}
+[4.696449] (-) TimerEvent: {}
+[4.709094] (power_distribution_panel) JobStarted: {'identifier': 'power_distribution_panel'}
+[4.750660] (autonomy) JobProgress: {'identifier': 'autonomy', 'progress': 'cmake'}
+[4.753601] (autonomy) JobProgress: {'identifier': 'autonomy', 'progress': 'build'}
+[4.755347] (autonomy) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/autonomy', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/autonomy', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/autonomy'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[4.766945] (communication) JobProgress: {'identifier': 'communication', 'progress': 'cmake'}
+[4.769784] (communication) JobProgress: {'identifier': 'communication', 'progress': 'build'}
+[4.771778] (communication) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/communication', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/communication', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/communication'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[4.784215] (logic) JobProgress: {'identifier': 'logic', 'progress': 'cmake'}
+[4.787652] (logic) JobProgress: {'identifier': 'logic', 'progress': 'build'}
+[4.793749] (logic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/logic', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/logic', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/logic'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[4.799205] (-) TimerEvent: {}
+[4.824872] (power_distribution_panel) JobProgress: {'identifier': 'power_distribution_panel', 'progress': 'cmake'}
+[4.828131] (power_distribution_panel) JobProgress: {'identifier': 'power_distribution_panel', 'progress': 'build'}
+[4.829369] (power_distribution_panel) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[4.899467] (-) TimerEvent: {}
+[4.978234] (logic) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target logic_node\x1b[0m\n'}
+[4.999655] (-) TimerEvent: {}
+[5.025833] (autonomy) StdoutLine: {'line': b'[100%] Built target autonomy_node\n'}
+[5.034038] (communication) StdoutLine: {'line': b'[100%] Built target communication_node\n'}
+[5.078681] (autonomy) CommandEnded: {'returncode': 0}
+[5.099107] (logic) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/logic_node.dir/src/logic_node.cpp.o\x1b[0m\n'}
+[5.101152] (-) TimerEvent: {}
+[5.102351] (communication) CommandEnded: {'returncode': 0}
+[5.122081] (power_distribution_panel) StdoutLine: {'line': b'[100%] Built target power_distribution_panel_node\n'}
+[5.171062] (power_distribution_panel) CommandEnded: {'returncode': 0}
+[5.196775] (communication) JobProgress: {'identifier': 'communication', 'progress': 'install'}
+[5.198987] (communication) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/communication', '--target', 'install', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/communication', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/communication'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[5.207521] (-) TimerEvent: {}
+[5.227582] (autonomy) JobProgress: {'identifier': 'autonomy', 'progress': 'install'}
+[5.228278] (autonomy) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/autonomy', '--target', 'install', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/autonomy', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/autonomy'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[5.300739] (power_distribution_panel) JobProgress: {'identifier': 'power_distribution_panel', 'progress': 'install'}
+[5.301739] (power_distribution_panel) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel', '--target', 'install', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[5.307669] (-) TimerEvent: {}
+[5.409122] (-) TimerEvent: {}
+[5.464850] (communication) StdoutLine: {'line': b'[100%] Built target communication_node\n'}
+[5.472125] (autonomy) StdoutLine: {'line': b'[100%] Built target autonomy_node\n'}
+[5.509338] (-) TimerEvent: {}
+[5.551596] (power_distribution_panel) StdoutLine: {'line': b'[100%] Built target power_distribution_panel_node\n'}
+[5.557655] (communication) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[5.558687] (autonomy) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[5.592154] (communication) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.593361] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/lib/communication/communication_node\n'}
+[5.594508] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/ament_index/resource_index/package_run_dependencies/communication\n'}
+[5.595497] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/ament_index/resource_index/parent_prefix_path/communication\n'}
+[5.596190] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/environment/ament_prefix_path.sh\n'}
+[5.596848] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/environment/ament_prefix_path.dsv\n'}
+[5.597924] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/environment/path.sh\n'}
+[5.599079] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/environment/path.dsv\n'}
+[5.599771] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/local_setup.bash\n'}
+[5.600376] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/local_setup.sh\n'}
+[5.601031] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/local_setup.zsh\n'}
+[5.601815] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/local_setup.dsv\n'}
+[5.602472] (communication) StdoutLine: {'line': b'-- Installing: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/package.dsv\n'}
+[5.603107] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/ament_index/resource_index/packages/communication\n'}
+[5.603733] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/cmake/communicationConfig.cmake\n'}
+[5.604364] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/cmake/communicationConfig-version.cmake\n'}
+[5.604996] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/communication/share/communication/package.xml\n'}
+[5.614504] (autonomy) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.615930] (-) TimerEvent: {}
+[5.616975] (communication) CommandEnded: {'returncode': 0}
+[5.619302] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/lib/autonomy/autonomy_node\n'}
+[5.636157] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/ament_index/resource_index/package_run_dependencies/autonomy\n'}
+[5.638167] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/ament_index/resource_index/parent_prefix_path/autonomy\n'}
+[5.639528] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/environment/ament_prefix_path.sh\n'}
+[5.640364] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/environment/ament_prefix_path.dsv\n'}
+[5.641184] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/environment/path.sh\n'}
+[5.643001] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/environment/path.dsv\n'}
+[5.644488] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/local_setup.bash\n'}
+[5.645545] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/local_setup.sh\n'}
+[5.648498] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/local_setup.zsh\n'}
+[5.649851] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/local_setup.dsv\n'}
+[5.651499] (autonomy) StdoutLine: {'line': b'-- Installing: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/package.dsv\n'}
+[5.658316] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/ament_index/resource_index/packages/autonomy\n'}
+[5.660261] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/cmake/autonomyConfig.cmake\n'}
+[5.661137] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/cmake/autonomyConfig-version.cmake\n'}
+[5.662636] (autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy/share/autonomy/package.xml\n'}
+[5.664807] (power_distribution_panel) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[5.673333] (power_distribution_panel) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.674904] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/lib/power_distribution_panel/power_distribution_panel_node\n'}
+[5.676234] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/ament_index/resource_index/package_run_dependencies/power_distribution_panel\n'}
+[5.683865] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/ament_index/resource_index/parent_prefix_path/power_distribution_panel\n'}
+[5.685008] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/environment/ament_prefix_path.sh\n'}
+[5.689881] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/environment/ament_prefix_path.dsv\n'}
+[5.690766] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/environment/path.sh\n'}
+[5.691926] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/environment/path.dsv\n'}
+[5.692941] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/local_setup.bash\n'}
+[5.693868] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/local_setup.sh\n'}
+[5.695257] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/local_setup.zsh\n'}
+[5.697961] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/local_setup.dsv\n'}
+[5.706380] (power_distribution_panel) StdoutLine: {'line': b'-- Installing: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/package.dsv\n'}
+[5.711388] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/ament_index/resource_index/packages/power_distribution_panel\n'}
+[5.712262] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/cmake/power_distribution_panelConfig.cmake\n'}
+[5.712985] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/cmake/power_distribution_panelConfig-version.cmake\n'}
+[5.713975] (power_distribution_panel) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel/share/power_distribution_panel/package.xml\n'}
+[5.714790] (autonomy) CommandEnded: {'returncode': 0}
+[5.716989] (-) TimerEvent: {}
+[5.765063] (power_distribution_panel) CommandEnded: {'returncode': 0}
+[5.818152] (-) TimerEvent: {}
+[5.886319] (communication) JobEnded: {'identifier': 'communication', 'rc': 0}
+[5.890305] (talon) JobStarted: {'identifier': 'talon'}
+[5.918635] (-) TimerEvent: {}
+[5.976538] (autonomy) JobEnded: {'identifier': 'autonomy', 'rc': 0}
+[6.020360] (-) TimerEvent: {}
+[6.027103] (power_distribution_panel) JobEnded: {'identifier': 'power_distribution_panel', 'rc': 0}
+[6.046611] (zed_tracking) JobStarted: {'identifier': 'zed_tracking'}
+[6.065357] (talon) JobProgress: {'identifier': 'talon', 'progress': 'cmake'}
+[6.068560] (talon) JobProgress: {'identifier': 'talon', 'progress': 'build'}
+[6.074781] (talon) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[6.088267] (zed_tracking) JobProgress: {'identifier': 'zed_tracking', 'progress': 'cmake'}
+[6.091604] (zed_tracking) JobProgress: {'identifier': 'zed_tracking', 'progress': 'build'}
+[6.092903] (zed_tracking) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/zed_tracking', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/zed_tracking', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/zed_tracking'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[6.120622] (-) TimerEvent: {}
+[6.221697] (-) TimerEvent: {}
+[6.306988] (talon) StdoutLine: {'line': b'[100%] Built target talon_node\n'}
+[6.322918] (-) TimerEvent: {}
+[6.350961] (talon) CommandEnded: {'returncode': 0}
+[6.368729] (zed_tracking) StdoutLine: {'line': b'[100%] Built target zed_tracking_node\n'}
+[6.412902] (zed_tracking) CommandEnded: {'returncode': 0}
+[6.423765] (-) TimerEvent: {}
+[6.448722] (talon) JobProgress: {'identifier': 'talon', 'progress': 'install'}
+[6.450260] (talon) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon', '--target', 'install', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[6.515730] (zed_tracking) JobProgress: {'identifier': 'zed_tracking', 'progress': 'install'}
+[6.522314] (zed_tracking) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/zed_tracking', '--target', 'install', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/zed_tracking', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 56746 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('HOME', '/home/team'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:12.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/zed_tracking'), ('SSH_CONNECTION', '192.168.1.3 56746 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent')]), 'shell': False}
+[6.527600] (-) TimerEvent: {}
+[6.628719] (-) TimerEvent: {}
+[6.690028] (talon) StdoutLine: {'line': b'[100%] Built target talon_node\n'}
+[6.728927] (-) TimerEvent: {}
+[6.763631] (talon) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[6.788353] (zed_tracking) StdoutLine: {'line': b'[100%] Built target zed_tracking_node\n'}
+[6.799540] (talon) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.800555] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/lib/talon/talon_node\n'}
+[6.801634] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/ament_index/resource_index/package_run_dependencies/talon\n'}
+[6.802601] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/ament_index/resource_index/parent_prefix_path/talon\n'}
+[6.803774] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/environment/ament_prefix_path.sh\n'}
+[6.805048] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/environment/ament_prefix_path.dsv\n'}
+[6.805977] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/environment/path.sh\n'}
+[6.807029] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/environment/path.dsv\n'}
+[6.807712] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/local_setup.bash\n'}
+[6.808396] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/local_setup.sh\n'}
+[6.809038] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/local_setup.zsh\n'}
+[6.809781] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/local_setup.dsv\n'}
+[6.810417] (talon) StdoutLine: {'line': b'-- Installing: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/package.dsv\n'}
+[6.811110] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/ament_index/resource_index/packages/talon\n'}
+[6.811800] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/cmake/talonConfig.cmake\n'}
+[6.812441] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/cmake/talonConfig-version.cmake\n'}
+[6.813008] (talon) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/talon/share/talon/package.xml\n'}
+[6.823468] (talon) CommandEnded: {'returncode': 0}
+[6.830142] (-) TimerEvent: {}
+[6.871412] (zed_tracking) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[6.905738] (zed_tracking) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.907020] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/lib/zed_tracking/zed_tracking_node\n'}
+[6.908123] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/ament_index/resource_index/package_run_dependencies/zed_tracking\n'}
+[6.909222] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/ament_index/resource_index/parent_prefix_path/zed_tracking\n'}
+[6.910120] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/environment/ament_prefix_path.sh\n'}
+[6.911203] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/environment/ament_prefix_path.dsv\n'}
+[6.912386] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/environment/path.sh\n'}
+[6.913180] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/environment/path.dsv\n'}
+[6.913855] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/local_setup.bash\n'}
+[6.914482] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/local_setup.sh\n'}
+[6.915144] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/local_setup.zsh\n'}
+[6.915810] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/local_setup.dsv\n'}
+[6.916374] (zed_tracking) StdoutLine: {'line': b'-- Installing: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/package.dsv\n'}
+[6.916915] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/ament_index/resource_index/packages/zed_tracking\n'}
+[6.917515] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/cmake/zed_trackingConfig.cmake\n'}
+[6.918160] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/cmake/zed_trackingConfig-version.cmake\n'}
+[6.918832] (zed_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking/share/zed_tracking/package.xml\n'}
+[6.924703] (zed_tracking) CommandEnded: {'returncode': 0}
+[6.936730] (-) TimerEvent: {}
+[7.039481] (talon) JobEnded: {'identifier': 'talon', 'rc': 0}
+[7.041955] (-) TimerEvent: {}
+[7.115117] (zed_tracking) JobEnded: {'identifier': 'zed_tracking', 'rc': 0}
+[7.142158] (-) TimerEvent: {}
+[7.242969] (-) TimerEvent: {}
+[7.343821] (-) TimerEvent: {}
+[7.444684] (-) TimerEvent: {}
+[7.545584] (-) TimerEvent: {}
+[7.646453] (-) TimerEvent: {}
+[7.747313] (-) TimerEvent: {}
+[7.848184] (-) TimerEvent: {}
+[7.949045] (-) TimerEvent: {}
+[8.052362] (-) TimerEvent: {}
+[8.153366] (-) TimerEvent: {}
+[8.254317] (-) TimerEvent: {}
+[8.355177] (-) TimerEvent: {}
+[8.456053] (-) TimerEvent: {}
+[8.556860] (-) TimerEvent: {}
+[8.657743] (-) TimerEvent: {}
+[8.758575] (-) TimerEvent: {}
+[8.859382] (-) TimerEvent: {}
+[8.960187] (-) TimerEvent: {}
+[9.061000] (-) TimerEvent: {}
+[9.161923] (-) TimerEvent: {}
+[9.262756] (-) TimerEvent: {}
+[9.363566] (-) TimerEvent: {}
+[9.464379] (-) TimerEvent: {}
+[9.480896] (logic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation1.hpp:1:0\x1b[m\x1b[K,\n'}
+[9.482038] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:17\x1b[m\x1b[K:\n'}
+[9.483607] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:19:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KsetNode\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[9.484138] (logic) StderrLine: {'line': b'     setNode(rclcpp::Node node\x1b[01;31m\x1b[K)\x1b[m\x1b[K{\n'}
+[9.484699] (logic) StderrLine: {'line': b'                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.485213] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint Automation::setNode(rclcpp::Node)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.485835] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:20:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node& rclcpp::Node::operator=(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[9.486339] (logic) StderrLine: {'line': b'         this->node=\x1b[01;31m\x1b[Knode\x1b[m\x1b[K;\n'}
+[9.486803] (logic) StderrLine: {'line': b'                    \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.487255] (logic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/context.hpp:33:0\x1b[m\x1b[K,\n'}
+[9.487736] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/contexts/default_context.hpp:18\x1b[m\x1b[K,\n'}
+[9.488284] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/executor.hpp:32\x1b[m\x1b[K,\n'}
+[9.488808] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[9.489319] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[9.489931] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145\x1b[m\x1b[K,\n'}
+[9.490444] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:4\x1b[m\x1b[K:\n'}
+[9.490947] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/macros.hpp:28:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[9.491484] (logic) StderrLine: {'line': b'   __VA_ARGS__ & \x1b[01;36m\x1b[Ko\x1b[m\x1b[Kperator=(const __VA_ARGS__ &) = delete;\n'}
+[9.492079] (logic) StderrLine: {'line': b'                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.492639] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/node.hpp:1088:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.493896] (logic) StderrLine: {'line': b'   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[9.494401] (logic) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.494871] (logic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation1.hpp:1:0\x1b[m\x1b[K,\n'}
+[9.495353] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:17\x1b[m\x1b[K:\n'}
+[9.495825] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:20:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node& rclcpp::Node::operator=(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.496302] (logic) StderrLine: {'line': b'         this->node=\x1b[01;31m\x1b[Knode\x1b[m\x1b[K;\n'}
+[9.496762] (logic) StderrLine: {'line': b'                    \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.497220] (logic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/context.hpp:33:0\x1b[m\x1b[K,\n'}
+[9.497773] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/contexts/default_context.hpp:18\x1b[m\x1b[K,\n'}
+[9.498268] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/executor.hpp:32\x1b[m\x1b[K,\n'}
+[9.498734] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[9.499231] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[9.499708] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145\x1b[m\x1b[K,\n'}
+[9.500181] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:4\x1b[m\x1b[K:\n'}
+[9.500670] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/macros.hpp:28:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.501165] (logic) StderrLine: {'line': b'   __VA_ARGS__ & \x1b[01;36m\x1b[Ko\x1b[m\x1b[Kperator=(const __VA_ARGS__ &) = delete;\n'}
+[9.501717] (logic) StderrLine: {'line': b'                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.502222] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/node.hpp:1088:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.502733] (logic) StderrLine: {'line': b'   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[9.503206] (logic) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.503674] (logic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation1.hpp:1:0\x1b[m\x1b[K,\n'}
+[9.504178] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:17\x1b[m\x1b[K:\n'}
+[9.504653] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:21:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KnodeHandle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.505143] (logic) StderrLine: {'line': b'         driveLeftSpeedPublisher= \x1b[01;31m\x1b[KnodeHandle\x1b[m\x1b[K->create_publisher<std_msgs::msg::Float32>("drive_left_speed",1);\n'}
+[9.505677] (logic) StderrLine: {'line': b'                                  \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.506212] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:21:85:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.506719] (logic) StderrLine: {'line': b'         driveLeftSpeedPublisher= nodeHandle->create_publisher<std_msgs::msg::Float32\x1b[01;31m\x1b[K>\x1b[m\x1b[K("drive_left_speed",1);\n'}
+[9.507222] (logic) StderrLine: {'line': b'                                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.507712] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:21:106:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.508187] (logic) StderrLine: {'line': b'         driveLeftSpeedPublisher= nodeHandle->create_publisher<std_msgs::msg::Float32>("drive_left_speed",\x1b[01;35m\x1b[K1\x1b[m\x1b[K);\n'}
+[9.508675] (logic) StderrLine: {'line': b'                                                                                                          \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.509158] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:22:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.509713] (logic) StderrLine: {'line': b'         driveRightSpeedPublisher= nodeHandle->create_publisher<std_msgs::msg::Float32\x1b[01;31m\x1b[K>\x1b[m\x1b[K("drive_right_speed",1);\n'}
+[9.510205] (logic) StderrLine: {'line': b'                                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.510685] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:22:108:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.511147] (logic) StderrLine: {'line': b'         driveRightSpeedPublisher= nodeHandle->create_publisher<std_msgs::msg::Float32>("drive_right_speed",\x1b[01;35m\x1b[K1\x1b[m\x1b[K);\n'}
+[9.511610] (logic) StderrLine: {'line': b'                                                                                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.512079] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:23:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[9.512580] (logic) StderrLine: {'line': b'     \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[9.513058] (logic) StderrLine: {'line': b'     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.559064] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[9.567077] (-) TimerEvent: {}
+[9.567594] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:33:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KAutomation1::Automation1()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.568220] (logic) StderrLine: {'line': b' Automation* automation=new Automation1(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.568717] (logic) StderrLine: {'line': b'                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.569216] (logic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:17:0\x1b[m\x1b[K:\n'}
+[9.569869] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation1.hpp:3:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAutomation1::Automation1()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[9.570382] (logic) StderrLine: {'line': b' class \x1b[01;36m\x1b[KAutomation1\x1b[m\x1b[K : public Automation{\n'}
+[9.570847] (logic) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.571302] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation1.hpp:3:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KAutomation::Automation()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.571802] (logic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation1.hpp:1:0\x1b[m\x1b[K,\n'}
+[9.572291] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:17\x1b[m\x1b[K:\n'}
+[9.572785] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:6:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAutomation::Automation()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[9.573276] (logic) StderrLine: {'line': b' class \x1b[01;36m\x1b[KAutomation\x1b[m\x1b[K{\n'}
+[9.573882] (logic) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.574372] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:6:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.574887] (logic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28:0\x1b[m\x1b[K,\n'}
+[9.575374] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.575858] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145\x1b[m\x1b[K,\n'}
+[9.576331] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:4\x1b[m\x1b[K:\n'}
+[9.576800] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/node.hpp:1083:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: rclcpp::Node::Node(const rclcpp::Node&, const string&)\n'}
+[9.577279] (logic) StderrLine: {'line': b'   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[9.577833] (logic) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.578336] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/node.hpp:1083:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[9.578809] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/node.hpp:96:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: rclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\n'}
+[9.579281] (logic) StderrLine: {'line': b'   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[9.579777] (logic) StderrLine: {'line': b'            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.580253] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/node.hpp:96:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[9.580713] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/node.hpp:85:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: rclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\n'}
+[9.581164] (logic) StderrLine: {'line': b'   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[9.581718] (logic) StderrLine: {'line': b'            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.582228] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/eloquent/include/rclcpp/node.hpp:85:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[9.667327] (-) TimerEvent: {}
+[9.768156] (-) TimerEvent: {}
+[9.868971] (-) TimerEvent: {}
+[9.942618] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.943346] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:308:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KAutomation::setNode(rclcpp::Node::SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.943872] (logic) StderrLine: {'line': b'     automation->setNode(nodeHandle\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.944351] (logic) StderrLine: {'line': b'                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.944809] (logic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation1.hpp:1:0\x1b[m\x1b[K,\n'}
+[9.945270] (logic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:17\x1b[m\x1b[K:\n'}
+[9.945857] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:19:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: int Automation::setNode(rclcpp::Node)\n'}
+[9.946342] (logic) StderrLine: {'line': b'     \x1b[01;36m\x1b[KsetNode\x1b[m\x1b[K(rclcpp::Node node){\n'}
+[9.946828] (logic) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[9.947297] (logic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp:19:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::SharedPtr {aka std::shared_ptr<rclcpp::Node>}\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.969160] (-) TimerEvent: {}
+[10.070061] (-) TimerEvent: {}
+[10.170865] (-) TimerEvent: {}
+[10.271620] (-) TimerEvent: {}
+[10.372447] (-) TimerEvent: {}
+[10.473295] (-) TimerEvent: {}
+[10.574176] (-) TimerEvent: {}
+[10.674995] (-) TimerEvent: {}
+[10.775810] (-) TimerEvent: {}
+[10.876630] (-) TimerEvent: {}
+[10.977377] (-) TimerEvent: {}
+[11.078240] (-) TimerEvent: {}
+[11.179072] (-) TimerEvent: {}
+[11.279892] (-) TimerEvent: {}
+[11.380699] (-) TimerEvent: {}
+[11.481606] (-) TimerEvent: {}
+[11.582442] (-) TimerEvent: {}
+[11.683306] (-) TimerEvent: {}
+[11.784141] (-) TimerEvent: {}
+[11.884955] (-) TimerEvent: {}
+[11.985877] (-) TimerEvent: {}
+[12.086710] (-) TimerEvent: {}
+[12.187536] (-) TimerEvent: {}
+[12.288341] (-) TimerEvent: {}
+[12.389168] (-) TimerEvent: {}
+[12.490072] (-) TimerEvent: {}
+[12.590894] (-) TimerEvent: {}
+[12.691708] (-) TimerEvent: {}
+[12.792527] (-) TimerEvent: {}
+[12.893358] (-) TimerEvent: {}
+[12.994258] (-) TimerEvent: {}
+[13.095082] (-) TimerEvent: {}
+[13.195905] (-) TimerEvent: {}
+[13.296727] (-) TimerEvent: {}
+[13.397553] (-) TimerEvent: {}
+[13.498370] (-) TimerEvent: {}
+[13.599191] (-) TimerEvent: {}
+[13.700011] (-) TimerEvent: {}
+[13.800836] (-) TimerEvent: {}
+[13.901659] (-) TimerEvent: {}
+[14.002468] (-) TimerEvent: {}
+[14.103289] (-) TimerEvent: {}
+[14.204114] (-) TimerEvent: {}
+[14.304937] (-) TimerEvent: {}
+[14.405846] (-) TimerEvent: {}
+[14.506673] (-) TimerEvent: {}
+[14.607493] (-) TimerEvent: {}
+[14.708351] (-) TimerEvent: {}
+[14.809190] (-) TimerEvent: {}
+[14.910096] (-) TimerEvent: {}
+[15.010913] (-) TimerEvent: {}
+[15.111734] (-) TimerEvent: {}
+[15.212553] (-) TimerEvent: {}
+[15.313294] (-) TimerEvent: {}
+[15.414185] (-) TimerEvent: {}
+[15.515003] (-) TimerEvent: {}
+[15.615840] (-) TimerEvent: {}
+[15.716589] (-) TimerEvent: {}
+[15.817492] (-) TimerEvent: {}
+[15.918334] (-) TimerEvent: {}
+[16.019129] (-) TimerEvent: {}
+[16.119930] (-) TimerEvent: {}
+[16.220748] (-) TimerEvent: {}
+[16.321576] (-) TimerEvent: {}
+[16.422396] (-) TimerEvent: {}
+[16.523214] (-) TimerEvent: {}
+[16.624039] (-) TimerEvent: {}
+[16.724857] (-) TimerEvent: {}
+[16.825735] (-) TimerEvent: {}
+[16.926541] (-) TimerEvent: {}
+[17.027363] (-) TimerEvent: {}
+[17.128186] (-) TimerEvent: {}
+[17.229018] (-) TimerEvent: {}
+[17.329917] (-) TimerEvent: {}
+[17.430737] (-) TimerEvent: {}
+[17.531546] (-) TimerEvent: {}
+[17.632367] (-) TimerEvent: {}
+[17.733184] (-) TimerEvent: {}
+[17.834071] (-) TimerEvent: {}
+[17.934872] (-) TimerEvent: {}
+[18.035682] (-) TimerEvent: {}
+[18.136496] (-) TimerEvent: {}
+[18.237317] (-) TimerEvent: {}
+[18.338219] (-) TimerEvent: {}
+[18.439038] (-) TimerEvent: {}
+[18.539860] (-) TimerEvent: {}
+[18.640659] (-) TimerEvent: {}
+[18.741529] (-) TimerEvent: {}
+[18.842344] (-) TimerEvent: {}
+[18.943164] (-) TimerEvent: {}
+[19.043956] (-) TimerEvent: {}
+[19.144765] (-) TimerEvent: {}
+[19.245597] (-) TimerEvent: {}
+[19.346387] (-) TimerEvent: {}
+[19.447184] (-) TimerEvent: {}
+[19.548006] (-) TimerEvent: {}
+[19.648830] (-) TimerEvent: {}
+[19.749650] (-) TimerEvent: {}
+[19.851779] (-) TimerEvent: {}
+[19.952622] (-) TimerEvent: {}
+[20.046562] (logic) StderrLine: {'line': b'make[2]: *** [CMakeFiles/logic_node.dir/src/logic_node.cpp.o] Error 1\n'}
+[20.047780] (logic) StdoutLine: {'line': b"CMakeFiles/logic_node.dir/build.make:62: recipe for target 'CMakeFiles/logic_node.dir/src/logic_node.cpp.o' failed\n"}
+[20.049556] (logic) StderrLine: {'line': b'make[1]: *** [CMakeFiles/logic_node.dir/all] Error 2\n'}
+[20.050055] (logic) StdoutLine: {'line': b"CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/logic_node.dir/all' failed\n"}
+[20.050567] (logic) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[20.051066] (logic) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[20.052810] (-) TimerEvent: {}
+[20.059618] (logic) CommandEnded: {'returncode': 2}
+[20.155685] (-) TimerEvent: {}
+[20.179141] (logic) JobEnded: {'identifier': 'logic', 'rc': 2}
+[20.194862] (-) EventReactorShutdown: {}

@@ -1,0 +1,30 @@
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:131:47:[m[K [01;31m[Kerror: [m[K‘[01m[KZedPosition[m[K’ in namespace ‘[01m[Kmessages::msg[m[K’ does not name a type
+ void zedPositionCallback(const messages::msg::[01;31m[KZedPosition[m[K::SharedPtr zedPosition){
+                                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:131:70:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[KzedPosition[m[K’
+ void zedPositionCallback(const messages::msg::ZedPosition::SharedPtr [01;31m[KzedPosition[m[K){
+                                                                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:131:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KzedPosition[m[K’
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:131:70:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KzedPosition[m[K’
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:[m[K In function ‘[01m[Kvoid changeSpeed(float, float)[m[K’:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:141:5:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedLeft[m[K’ was not declared in this scope
+     [01;31m[KspeedLeft[m[K.data=left;
+     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:142:5:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedRight[m[K’ was not declared in this scope
+     [01;31m[KspeedRight[m[K.data=right;
+     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:175:80:[m[K [01;31m[Kerror: [m[K‘[01m[KZedPosition[m[K’ is not a member of ‘[01m[Kmessages::msg[m[K’
+     auto zedPositionSubscriber= nodeHandle->create_subscription<messages::msg::[01;31m[KZedPosition[m[K>("zed_position",1,zedPositionCallback);
+                                                                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:175:80:[m[K [01;31m[Kerror: [m[K‘[01m[KZedPosition[m[K’ is not a member of ‘[01m[Kmessages::msg[m[K’
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:175:110:[m[K [01;31m[Kerror: [m[K‘[01m[KzedPositionCallback[m[K’ was not declared in this scope
+ auto zedPositionSubscriber= nodeHandle->create_subscription<messages::msg::ZedPosition>("zed_position",1,[01;31m[KzedPositionCallback[m[K);
+                                                                                                          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:175:110:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KzedPositionSubscriber[m[K’
+ auto zedPositionSubscriber= nodeHandle->create_subscription<messages::msg::ZedPosition>("zed_position",1,[01;36m[KzedPositionCallback[m[K);
+                                                                                                          [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+                                                                                                              [32m[KzedPositionSubscriber[m[K
+make[2]: *** [CMakeFiles/logic_node.dir/src/logic_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/logic_node.dir/all] Error 2
+make: *** [all] Error 2

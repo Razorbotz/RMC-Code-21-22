@@ -1,0 +1,66 @@
+[0.094s] Invoking command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon': AMENT_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/talon -- -j4 -l4
+[0.241s] [35m[1mScanning dependencies of target talon_node[0m
+[0.355s] [ 50%] [32mBuilding CXX object CMakeFiles/talon_node.dir/src/talon_node.cpp.o[0m
+[5.856s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:[m[K In function ‘[01m[Kvoid stopCallback(std_msgs::msg::Empty)[m[K’:
+[5.856s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:27:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kempty[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.857s]    27 | void stopCallback([01;35m[Kstd_msgs::msg::Empty empty[m[K){
+[5.857s]       |                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[5.858s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:[m[K In function ‘[01m[Kvoid goCallback(std_msgs::msg::Empty)[m[K’:
+[5.858s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:31:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kempty[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.858s]    31 | void goCallback([01;35m[Kstd_msgs::msg::Empty empty[m[K){
+[5.859s]       |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[5.871s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.871s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:55:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.871s]    55 |  [01;31m[Kros[m[K::NodeHandle nodeHandleP("~");
+[5.872s]       |  [01;31m[K^~~[m[K
+[5.872s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:56:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.872s]    56 |  [01;31m[Kros[m[K::NodeHandle nodeHandle;
+[5.873s]       |  [01;31m[K^~~[m[K
+[5.879s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:61:17:[m[K [01;31m[Kerror: [m[K‘[01m[KnodeHandleP[m[K’ was not declared in this scope
+[5.879s]    61 |         success=[01;31m[KnodeHandleP[m[K.getParam("message", message);
+[5.879s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[5.897s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:138:12:[m[K [01;31m[Kerror: [m[K‘[01m[KTalonOut[m[K’ is not a member of ‘[01m[Kmessages[m[K’; did you mean ‘[01m[Kmessages::msg::TalonOut[m[K’?
+[5.898s]   138 |  messages::[01;31m[KTalonOut[m[K talonOut;
+[5.898s]       |            [01;31m[K^~~~~~~~[m[K
+[5.898s] In file included from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out.hpp:7[m[K,
+[5.899s]                  from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:18[m[K:
+[5.899s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/detail/talon_out__struct.hpp:261:7:[m[K [01;36m[Knote: [m[K‘[01m[Kmessages::msg::TalonOut[m[K’ declared here
+[5.899s]   261 | using [01;36m[KTalonOut[m[K =
+[5.900s]       |       [01;36m[K^~~~~~~~[m[K
+[5.900s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:139:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.900s]   139 |  [01;31m[Kros[m[K::Publisher talonOutPublisher=nodeHandle.advertise<messages::TalonOut>(infoTopic.c_str(),1);
+[5.901s]       |  [01;31m[K^~~[m[K
+[5.901s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:140:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.901s]   140 |  [01;31m[Kros[m[K::Subscriber speedSubscriber=nodeHandle.subscribe(speedTopic.c_str(),1,speedCallback);
+[5.902s]       |  [01;31m[K^~~[m[K
+[5.902s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:142:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.903s]   142 |  [01;31m[Kros[m[K::Subscriber stopSubscriber=nodeHandle.subscribe("STOP",1,stopCallback);
+[5.903s]       |  [01;31m[K^~~[m[K
+[5.903s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:143:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.904s]   143 |  [01;31m[Kros[m[K::Subscriber goSubscriber=nodeHandle.subscribe("GO",1,goCallback);
+[5.904s]       |  [01;31m[K^~~[m[K
+[5.904s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:147:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.905s]   147 |         while([01;31m[Kros[m[K::ok()){
+[5.905s]       |               [01;31m[K^~~[m[K
+[5.908s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:165:4:[m[K [01;31m[Kerror: [m[K‘[01m[KtalonOut[m[K’ was not declared in this scope
+[5.909s]   165 |    [01;31m[KtalonOut[m[K.deviceID=deviceID;
+[5.909s]       |    [01;31m[K^~~~~~~~[m[K
+[5.918s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:177:4:[m[K [01;31m[Kerror: [m[K‘[01m[KtalonOutPublisher[m[K’ was not declared in this scope
+[5.919s]   177 |    [01;31m[KtalonOutPublisher[m[K.publish(talonOut);
+[5.919s]       |    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[5.919s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:155:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisInverted[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.920s]   155 |    bool [01;35m[KisInverted[m[K=talonSRX->GetInverted();
+[5.920s]       |         [01;35m[K^~~~~~~~~~[m[K
+[5.923s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:217:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.923s]   217 |   [01;31m[Kros[m[K::spinOnce();
+[5.924s]       |   [01;31m[K^~~[m[K
+[5.924s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:113:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KkSlotIdx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.924s]   113 |  int [01;35m[KkSlotIdx[m[K=0;
+[5.925s]       |      [01;35m[K^~~~~~~~[m[K
+[5.925s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:136:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KstatusFrame[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.926s]   136 |  StatusFrame [01;35m[KstatusFrame[m[K;
+[5.926s]       |              [01;35m[K^~~~~~~~~~~[m[K
+[7.392s] make[2]: *** [CMakeFiles/talon_node.dir/build.make:63: CMakeFiles/talon_node.dir/src/talon_node.cpp.o] Error 1
+[7.393s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/talon_node.dir/all] Error 2
+[7.393s] make: *** [Makefile:141: all] Error 2
+[7.399s] Invoked command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon' returned '2': AMENT_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/talon -- -j4 -l4

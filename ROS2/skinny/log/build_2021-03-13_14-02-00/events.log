@@ -1,0 +1,146 @@
+[0.000000] (-) TimerEvent: {}
+[0.000502] (excavation) JobQueued: {'identifier': 'excavation', 'dependencies': OrderedDict()}
+[0.000688] (messages) JobQueued: {'identifier': 'messages', 'dependencies': OrderedDict()}
+[0.000840] (communication) JobQueued: {'identifier': 'communication', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.040958] (logic) JobQueued: {'identifier': 'logic', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.045043] (power_distribution_panel) JobQueued: {'identifier': 'power_distribution_panel', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.045254] (talon) JobQueued: {'identifier': 'talon', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.045437] (zed_tracking) JobQueued: {'identifier': 'zed_tracking', 'dependencies': OrderedDict([('messages', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages')])}
+[0.045692] (messages) JobStarted: {'identifier': 'messages'}
+[0.089479] (excavation) JobStarted: {'identifier': 'excavation'}
+[0.098175] (-) TimerEvent: {}
+[0.140583] (messages) JobProgress: {'identifier': 'messages', 'progress': 'cmake'}
+[0.143547] (messages) JobProgress: {'identifier': 'messages', 'progress': 'build'}
+[0.147279] (messages) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/team/SoftwareDevelopment/ROS2/skinny/build/messages', '--', '-j4', '-l4'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/build/messages', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/team'), ('USER', 'team'), ('SSH_CLIENT', '192.168.1.3 44734 22'), ('LD_LIBRARY_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/team/SoftwareDevelopment/ROS2/skinny/src'), ('HOME', '/home/team'), ('SSH_TTY', '/dev/pts/7'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'team'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '91'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/talon:/home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel:/home/team/SoftwareDevelopment/ROS2/skinny/install/logic:/home/team/SoftwareDevelopment/ROS2/skinny/install/communication:/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation:/opt/ros/eloquent'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/team/SoftwareDevelopment/ROS2/skinny/build/messages'), ('SSH_CONNECTION', '192.168.1.3 44734 192.168.1.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/team/SoftwareDevelopment/ROS2/skinny/install/talon:/home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel:/home/team/SoftwareDevelopment/ROS2/skinny/install/logic:/home/team/SoftwareDevelopment/ROS2/skinny/install/communication:/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation:/opt/ros/eloquent')]), 'shell': False}
+[0.198521] (-) TimerEvent: {}
+[0.299583] (-) TimerEvent: {}
+[0.400378] (-) TimerEvent: {}
+[0.501181] (-) TimerEvent: {}
+[0.601978] (-) TimerEvent: {}
+[0.702778] (-) TimerEvent: {}
+[0.803564] (-) TimerEvent: {}
+[0.904335] (-) TimerEvent: {}
+[1.005088] (-) TimerEvent: {}
+[1.105850] (-) TimerEvent: {}
+[1.206608] (-) TimerEvent: {}
+[1.307369] (-) TimerEvent: {}
+[1.408154] (-) TimerEvent: {}
+[1.508952] (-) TimerEvent: {}
+[1.609832] (-) TimerEvent: {}
+[1.647539] (messages) StdoutLine: {'line': b'-- Found ament_cmake: 0.8.3 (/opt/ros/eloquent/share/ament_cmake/cmake)\n'}
+[1.649104] (messages) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[1.650041] (messages) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.650972] (messages) StdoutLine: {'line': b'-- Found rclcpp: 0.8.5 (/opt/ros/eloquent/share/rclcpp/cmake)\n'}
+[1.651804] (messages) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.8.3 (/opt/ros/eloquent/share/rosidl_adapter/cmake)\n'}
+[1.657388] (excavation) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/excavation', 'build', '--build-base', '/home/team/SoftwareDevelopment/ROS2/skinny/build/excavation/build', 'install', '--prefix', '/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation', '--record', '/home/team/SoftwareDevelopment/ROS2/skinny/build/excavation/install.log', '--single-version-externally-managed'], 'cwd': '/home/team/SoftwareDevelopment/ROS2/skinny/src/excavation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/team', 'USER': 'team', 'SSH_CLIENT': '192.168.1.3 44734 22', 'LD_LIBRARY_PATH': '/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib', 'SHLVL': '1', 'OLDPWD': '/home/team/SoftwareDevelopment/ROS2/skinny/src', 'HOME': '/home/team', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/team/SoftwareDevelopment/ROS2/skinny/install', 'ROS_DISTRO': 'eloquent', 'LOGNAME': 'team', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '91', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/team/.local/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/team/SoftwareDevelopment/ROS2/skinny/install/talon:/home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel:/home/team/SoftwareDevelopment/ROS2/skinny/install/logic:/home/team/SoftwareDevelopment/ROS2/skinny/install/communication:/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation:/opt/ros/eloquent', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/team/SoftwareDevelopment/ROS2/skinny/build/excavation', 'SSH_CONNECTION': '192.168.1.3 44734 192.168.1.4 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/python3.6/site-packages:/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages:/usr/local/lib', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/team/SoftwareDevelopment/ROS2/skinny/install/talon:/home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel:/home/team/SoftwareDevelopment/ROS2/skinny/install/logic:/home/team/SoftwareDevelopment/ROS2/skinny/install/communication:/home/team/SoftwareDevelopment/ROS2/skinny/install/messages'}, 'shell': False}
+[1.710048] (-) TimerEvent: {}
+[1.753447] (messages) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)\n'}
+[1.759528] (messages) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.810187] (-) TimerEvent: {}
+[1.884624] (messages) StdoutLine: {'line': b'-- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)\n'}
+[1.904999] (messages) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)\n'}
+[1.910346] (-) TimerEvent: {}
+[2.011047] (-) TimerEvent: {}
+[2.111813] (-) TimerEvent: {}
+[2.212579] (-) TimerEvent: {}
+[2.313330] (-) TimerEvent: {}
+[2.414121] (-) TimerEvent: {}
+[2.415880] (messages) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.8.2 (/opt/ros/eloquent/share/ament_lint_auto/cmake)\n'}
+[2.514285] (-) TimerEvent: {}
+[2.615047] (-) TimerEvent: {}
+[2.715826] (-) TimerEvent: {}
+[2.816625] (-) TimerEvent: {}
+[2.884413] (messages) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") \n'}
+[2.916860] (-) TimerEvent: {}
+[3.017641] (-) TimerEvent: {}
+[3.095253] (excavation) StdoutLine: {'line': b'running egg_info\n'}
+[3.098405] (excavation) StdoutLine: {'line': b'writing ../../build/excavation/excavation.egg-info/PKG-INFO\n'}
+[3.099293] (excavation) StdoutLine: {'line': b'writing dependency_links to ../../build/excavation/excavation.egg-info/dependency_links.txt\n'}
+[3.100075] (excavation) StdoutLine: {'line': b'writing entry points to ../../build/excavation/excavation.egg-info/entry_points.txt\n'}
+[3.100947] (excavation) StdoutLine: {'line': b'writing requirements to ../../build/excavation/excavation.egg-info/requires.txt\n'}
+[3.101498] (excavation) StdoutLine: {'line': b'writing top-level names to ../../build/excavation/excavation.egg-info/top_level.txt\n'}
+[3.117888] (-) TimerEvent: {}
+[3.218618] (-) TimerEvent: {}
+[3.291308] (excavation) StdoutLine: {'line': b"reading manifest file '../../build/excavation/excavation.egg-info/SOURCES.txt'\n"}
+[3.298291] (excavation) StdoutLine: {'line': b"writing manifest file '../../build/excavation/excavation.egg-info/SOURCES.txt'\n"}
+[3.299225] (excavation) StdoutLine: {'line': b'running build\n'}
+[3.299737] (excavation) StdoutLine: {'line': b'running build_py\n'}
+[3.300300] (excavation) StdoutLine: {'line': b'running install\n'}
+[3.301944] (excavation) StdoutLine: {'line': b'running install_lib\n'}
+[3.307098] (excavation) StdoutLine: {'line': b'running install_data\n'}
+[3.309481] (excavation) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.318765] (excavation) StdoutLine: {'line': b"removing '/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/python3.6/site-packages/excavation-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[3.319421] (-) TimerEvent: {}
+[3.320149] (excavation) StdoutLine: {'line': b'Copying ../../build/excavation/excavation.egg-info to /home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/python3.6/site-packages/excavation-0.0.0-py3.6.egg-info\n'}
+[3.324593] (excavation) StdoutLine: {'line': b'running install_scripts\n'}
+[3.409830] (excavation) StdoutLine: {'line': b'Installing excavation_node script to /home/team/SoftwareDevelopment/ROS2/skinny/install/excavation/lib/excavation\n'}
+[3.411272] (excavation) StdoutLine: {'line': b"writing list of installed files to '/home/team/SoftwareDevelopment/ROS2/skinny/build/excavation/install.log'\n"}
+[3.419690] (-) TimerEvent: {}
+[3.511255] (excavation) CommandEnded: {'returncode': 0}
+[3.519892] (-) TimerEvent: {}
+[3.577857] (excavation) JobEnded: {'identifier': 'excavation', 'rc': 0}
+[3.620126] (-) TimerEvent: {}
+[3.720852] (-) TimerEvent: {}
+[3.821600] (-) TimerEvent: {}
+[3.872143] (messages) StderrLine: {'line': b'CMake Error at /opt/ros/eloquent/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):\n'}
+[3.872872] (messages) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name messages\n'}
+[3.873327] (messages) StderrLine: {'line': b'  --arguments-file\n'}
+[3.873838] (messages) StderrLine: {'line': b'  /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter__arguments__messages.json\n'}
+[3.874322] (messages) StderrLine: {'line': b'  --output-dir\n'}
+[3.874752] (messages) StderrLine: {'line': b'  /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages\n'}
+[3.875175] (messages) StderrLine: {'line': b'  --output-file\n'}
+[3.875597] (messages) StderrLine: {'line': b'  /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages.idls)\n'}
+[3.876023] (messages) StderrLine: {'line': b'  returned error code 1:\n'}
+[3.876446] (messages) StderrLine: {'line': b'\n'}
+[3.876869] (messages) StderrLine: {'line': b"  Error processing 'float32 x;' of 'messages/ZedPosition': ''x;' is an\n"}
+[3.877294] (messages) StderrLine: {'line': b'  invalid field name.  It should have the pattern\n'}
+[3.877716] (messages) StderrLine: {'line': b"  '^[a-z]([a-z0-9_]?[a-z0-9]+)*$''\n"}
+[3.878199] (messages) StderrLine: {'line': b'\n'}
+[3.878627] (messages) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[3.879392] (messages) StderrLine: {'line': b'\n'}
+[3.879878] (messages) StderrLine: {'line': b'    File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main\n'}
+[3.880384] (messages) StderrLine: {'line': b'      "__main__", mod_spec)\n'}
+[3.880825] (messages) StderrLine: {'line': b'    File "/usr/lib/python3.6/runpy.py", line 85, in _run_code\n'}
+[3.881242] (messages) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[3.881655] (messages) StderrLine: {'line': b'    File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[3.882213] (messages) StderrLine: {'line': b'      sys.exit(main())\n'}
+[3.882668] (messages) StderrLine: {'line': b'    File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/main.py", line 55, in main\n'}
+[3.883157] (messages) StderrLine: {'line': b'      pathlib.Path(relative_path), output_dir)\n'}
+[3.883671] (messages) StderrLine: {'line': b'    File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/__init__.py", line 20, in convert_to_idl\n'}
+[3.884230] (messages) StderrLine: {'line': b"      package_dir, package_name, interface_file, output_dir / 'msg')\n"}
+[3.884752] (messages) StderrLine: {'line': b'    File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[3.885240] (messages) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[3.885782] (messages) StderrLine: {'line': b'    File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 508, in parse_message_string\n'}
+[3.886328] (messages) StderrLine: {'line': b'      field_name, default_value_string))\n'}
+[3.886814] (messages) StderrLine: {'line': b'    File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 349, in __init__\n'}
+[3.887279] (messages) StderrLine: {'line': b'      name, VALID_FIELD_NAME_PATTERN.pattern))\n'}
+[3.887741] (messages) StderrLine: {'line': b'\n'}
+[3.888189] (messages) StderrLine: {'line': b"  NameError: 'x;' is an invalid field name.  It should have the pattern\n"}
+[3.888653] (messages) StderrLine: {'line': b"  '^[a-z]([a-z0-9_]?[a-z0-9]+)*$'\n"}
+[3.889110] (messages) StderrLine: {'line': b'\n'}
+[3.889589] (messages) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.890164] (messages) StderrLine: {'line': b'  /opt/ros/eloquent/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[3.890668] (messages) StderrLine: {'line': b'  CMakeLists.txt:36 (rosidl_generate_interfaces)\n'}
+[3.891140] (messages) StderrLine: {'line': b'\n'}
+[3.891621] (messages) StderrLine: {'line': b'\n'}
+[3.892095] (messages) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.892575] (messages) StdoutLine: {'line': b'See also "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles/CMakeOutput.log".\n'}
+[3.893051] (messages) StdoutLine: {'line': b'See also "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles/CMakeError.log".\n'}
+[3.893950] (messages) StderrLine: {'line': b'make: *** [cmake_check_build_system] Error 1\n'}
+[3.894540] (messages) StdoutLine: {'line': b"Makefile:2624: recipe for target 'cmake_check_build_system' failed\n"}
+[3.899640] (messages) CommandEnded: {'returncode': 2}
+[3.921943] (-) TimerEvent: {}
+[4.022864] (-) TimerEvent: {}
+[4.123670] (-) TimerEvent: {}
+[4.224716] (-) TimerEvent: {}
+[4.325803] (-) TimerEvent: {}
+[4.426683] (-) TimerEvent: {}
+[4.527492] (-) TimerEvent: {}
+[4.628800] (-) TimerEvent: {}
+[4.687812] (messages) JobEnded: {'identifier': 'messages', 'rc': 2}
+[4.700288] (communication) JobSkipped: {'identifier': 'communication'}
+[4.700530] (logic) JobSkipped: {'identifier': 'logic'}
+[4.700659] (power_distribution_panel) JobSkipped: {'identifier': 'power_distribution_panel'}
+[4.700779] (talon) JobSkipped: {'identifier': 'talon'}
+[4.700900] (zed_tracking) JobSkipped: {'identifier': 'zed_tracking'}
+[4.701017] (-) EventReactorShutdown: {}

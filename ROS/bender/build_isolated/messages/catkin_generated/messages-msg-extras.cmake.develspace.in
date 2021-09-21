@@ -1,0 +1,2 @@
+set(messages_MESSAGE_FILES "/home/nvidia/SoftwareDevelopment/ROS/src/messages/msg/ButtonState.msg;/home/nvidia/SoftwareDevelopment/ROS/src/messages/msg/HatState.msg;/home/nvidia/SoftwareDevelopment/ROS/src/messages/msg/JoystickCommand.msg;/home/nvidia/SoftwareDevelopment/ROS/src/messages/msg/Power.msg;/home/nvidia/SoftwareDevelopment/ROS/src/messages/msg/TalonOut.msg")
+set(messages_SERVICE_FILES "")

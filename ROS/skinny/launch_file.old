@@ -1,0 +1,49 @@
+<launch>
+  <node pkg="talon" type="talon_node" name="drive_left">
+    <param name="messsage" value="my stupid message" />
+    <rosparam>
+      motor_number: 1 
+      invert_motor: false
+      speed_topic: "drive_left_speed"
+      info_topic: "talon_1_info"
+      test_speed: 300
+      kP: 0.0 
+      kI: 0.0
+      kD: 0.0
+      kF: 0.0
+    </rosparam>
+  </node>
+  <node pkg="talon" type="talon_node" name="drive_right">
+    <rosparam>
+      motor_number: 2 
+      invert_motor: true
+      speed_topic: "drive_right_speed"
+      info_topic: "talon_2_info"
+      test_speed: 1000
+      kP: 0.20 
+      kI: 0.001
+      kD: 0.000001
+      kF: 0.0
+    </rosparam>
+  </node>
+  <node pkg="victor" type="victor_node" name="elbow_left">
+    <rosparam>
+      motor_number: 3 
+      invert_motor: true 
+      speed_topic: "elbow_left_speed"
+      info_topic: "victor_3_info"
+    </rosparam>
+  </node>
+  <node pkg="victor" type="victor_node" name="elbow_right">
+    <rosparam>
+      motor_number: 4 
+      invert_motor: false 
+      speed_topic: "elbow_right_speed"
+      info_topic: "victor_4_info"
+    </rosparam>
+  </node>
+  <node pkg="logic" type="logic_node" name="logic"/>
+  <node pkg="communication" type="communication_node" name="communication"/>
+  <node pkg="power_distribution_panel" type="power_distribution_panel_node" name="power"/>
+  <node pkg="scoop_drum" type="scoop_drum_node" name="scoop"/>
+</launch>

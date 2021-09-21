@@ -1,0 +1,26 @@
+[35m[1mScanning dependencies of target logic_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/logic_node.dir/src/logic_node.cpp.o[0m
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:[m[K In function ‘[01m[Kvoid joystickAxisCallback(messages::msg::AxisState_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:83:29:[m[K [01;31m[Kerror: [m[K‘[01m[KreverseAuger[m[K’ was not declared in this scope
+         float augerSpeed = ([01;31m[KreverseAuger[m[K)? joystick1Throttle : -joystick1Throttle;
+                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:85:40:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kfloat[m[K’ to non-scalar type ‘[01m[Kstd_msgs::msg::Float32 {aka std_msgs::msg::Float32_<std::allocator<void> >}[m[K’ requested
+         std_msgs::msg::Float32 auger = [01;31m[KaugerSpeed[m[K;
+                                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:86:9:[m[K [01;31m[Kerror: [m[K‘[01m[KexavationAugerPublisher[m[K’ was not declared in this scope
+         [01;31m[KexavationAugerPublisher[m[K->publish(auger);
+         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:86:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KexcavationAugerPublisher[m[K’
+         [01;36m[KexavationAugerPublisher[m[K->publish(auger);
+         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+         [32m[KexcavationAugerPublisher[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:[m[K In function ‘[01m[Kvoid joystickButtonCallback(messages::msg::ButtonState_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:124:13:[m[K [01;31m[Kerror: [m[K‘[01m[KreverseAuger[m[K’ was not declared in this scope
+             [01;31m[KreverseAuger[m[K = false;
+             [01;31m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/logic_node.dir/src/logic_node.cpp.o] Error 1
+CMakeFiles/logic_node.dir/build.make:62: recipe for target 'CMakeFiles/logic_node.dir/src/logic_node.cpp.o' failed
+CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/logic_node.dir/all' failed
+make[1]: *** [CMakeFiles/logic_node.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

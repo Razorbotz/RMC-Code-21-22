@@ -1,0 +1,2 @@
+set(messages_MESSAGE_FILES "/home/team/SoftwareDevelopment/ROS/src/messages/msg/ButtonState.msg;/home/team/SoftwareDevelopment/ROS/src/messages/msg/HatState.msg;/home/team/SoftwareDevelopment/ROS/src/messages/msg/AxisState.msg;/home/team/SoftwareDevelopment/ROS/src/messages/msg/Power.msg;/home/team/SoftwareDevelopment/ROS/src/messages/msg/TalonOut.msg;/home/team/SoftwareDevelopment/ROS/src/messages/msg/VictorOut.msg;/home/team/SoftwareDevelopment/ROS/src/messages/msg/KeyState.msg;/home/team/SoftwareDevelopment/ROS/src/messages/msg/Camera.msg")
+set(messages_SERVICE_FILES "")

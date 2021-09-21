@@ -1,0 +1,29 @@
+[0.123s] Invoking command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/logic': CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking:/home/team/SoftwareDevelopment/ROS2/skinny/install/talon:/home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel:/home/team/SoftwareDevelopment/ROS2/skinny/install/logic:/home/team/SoftwareDevelopment/ROS2/skinny/install/communication:/home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy:/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation:/opt/ros/eloquent /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/logic -- -j4 -l4
+[0.358s] [35m[1mScanning dependencies of target logic_node[0m
+[0.500s] [ 50%] [32mBuilding CXX object CMakeFiles/logic_node.dir/src/logic_node.cpp.o[0m
+[4.783s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:32:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_prt[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[4.783s]  std::[01;31m[Kshared_prt[m[K<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> >, std::allocator<void> > > excavationElevationPublisher;
+[4.784s]       [01;31m[K^~~~~~~~~~[m[K
+[4.861s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:[m[K In function ‘[01m[Kvoid joystickButtonCallback(messages::msg::ButtonState_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.862s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:119:13:[m[K [01;31m[Kerror: [m[K‘[01m[KexcavationElevationPublisher[m[K’ was not declared in this scope
+[4.862s]              [01;31m[KexcavationElevationPublisher[m[K->publish(excavationElevation);
+[4.863s]              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.869s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:119:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KexcavationElevation[m[K’
+[4.870s]              [01;36m[KexcavationElevationPublisher[m[K->publish(excavationElevation);
+[4.870s]              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.871s]              [32m[KexcavationElevation[m[K
+[5.187s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.187s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:274:5:[m[K [01;31m[Kerror: [m[K‘[01m[KexcavationElevationPublisher[m[K’ was not declared in this scope
+[5.188s]      [01;31m[KexcavationElevationPublisher[m[K = nodeHandle->create_publisher<std_msgs::msg::Float32>("excavationElevation",1);
+[5.188s]      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.203s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:274:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KexcavationElevation[m[K’
+[5.204s]      [01;36m[KexcavationElevationPublisher[m[K = nodeHandle->create_publisher<std_msgs::msg::Float32>("excavationElevation",1);
+[5.204s]      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.205s]      [32m[KexcavationElevation[m[K
+[14.838s] make[2]: *** [CMakeFiles/logic_node.dir/src/logic_node.cpp.o] Error 1
+[14.840s] CMakeFiles/logic_node.dir/build.make:62: recipe for target 'CMakeFiles/logic_node.dir/src/logic_node.cpp.o' failed
+[14.841s] CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/logic_node.dir/all' failed
+[14.841s] Makefile:140: recipe for target 'all' failed
+[14.842s] make[1]: *** [CMakeFiles/logic_node.dir/all] Error 2
+[14.842s] make: *** [all] Error 2
+[14.852s] Invoked command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/logic' returned '2': CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/home/team/SoftwareDevelopment/ROS2/skinny/install/zed_tracking:/home/team/SoftwareDevelopment/ROS2/skinny/install/talon:/home/team/SoftwareDevelopment/ROS2/skinny/install/power_distribution_panel:/home/team/SoftwareDevelopment/ROS2/skinny/install/logic:/home/team/SoftwareDevelopment/ROS2/skinny/install/communication:/home/team/SoftwareDevelopment/ROS2/skinny/install/autonomy:/home/team/SoftwareDevelopment/ROS2/skinny/install/excavation:/opt/ros/eloquent /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/logic -- -j4 -l4

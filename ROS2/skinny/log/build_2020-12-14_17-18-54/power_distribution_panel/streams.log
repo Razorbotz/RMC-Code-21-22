@@ -1,0 +1,36 @@
+[0.058s] Invoking command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel': AMENT_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel -- -j4 -l4
+[0.256s] [ 33%] [32mBuilding CXX object CMakeFiles/power_distribution_panel_node.dir/src/power_distribution_panel_node.cpp.o[0m
+[5.547s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.548s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:24:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.549s]    24 |  [01;31m[Kros[m[K::init(argc,argv,"power_distribution_panel_node");
+[5.549s]       |  [01;31m[K^~~[m[K
+[5.549s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:25:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.550s]    25 |  [01;31m[Kros[m[K::NodeHandle nodeHandle;
+[5.550s]       |  [01;31m[K^~~[m[K
+[5.550s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:26:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.551s]    26 |  [01;31m[Kros[m[K::Publisher publisher=nodeHandle.advertise<messages::Power>("power",1);
+[5.552s]       |  [01;31m[K^~~[m[K
+[5.552s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:27:12:[m[K [01;31m[Kerror: [m[K‘[01m[KPower[m[K’ is not a member of ‘[01m[Kmessages[m[K’; did you mean ‘[01m[Kmessages::msg::Power[m[K’?
+[5.552s]    27 |  messages::[01;31m[KPower[m[K power;
+[5.553s]       |            [01;31m[K^~~~~[m[K
+[5.553s] In file included from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power.hpp:7[m[K,
+[5.553s]                  from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:19[m[K:
+[5.554s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/detail/power__struct.hpp:345:7:[m[K [01;36m[Knote: [m[K‘[01m[Kmessages::msg::Power[m[K’ declared here
+[5.554s]   345 | using [01;36m[KPower[m[K =
+[5.555s]       |       [01;36m[K^~~~~[m[K
+[5.555s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:59:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.555s]    59 |  while([01;31m[Kros[m[K::ok()){
+[5.556s]       |        [01;31m[K^~~[m[K
+[5.559s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:67:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kpower[m[K’ was not declared in this scope
+[5.560s]    67 |    [01;31m[Kpower[m[K.voltage=pdp.getVoltage();
+[5.560s]       |    [01;31m[K^~~~~[m[K
+[5.568s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:85:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope
+[5.568s]    85 |    [01;31m[Kpublisher[m[K.publish(power);
+[5.569s]       |    [01;31m[K^~~~~~~~~[m[K
+[5.569s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:88:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[5.570s]    88 |   [01;31m[Kros[m[K::spinOnce();
+[5.570s]       |   [01;31m[K^~~[m[K
+[6.966s] make[2]: *** [CMakeFiles/power_distribution_panel_node.dir/build.make:63: CMakeFiles/power_distribution_panel_node.dir/src/power_distribution_panel_node.cpp.o] Error 1
+[6.966s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/power_distribution_panel_node.dir/all] Error 2
+[6.969s] make: *** [Makefile:141: all] Error 2
+[6.981s] Invoked command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel' returned '2': AMENT_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/power_distribution_panel -- -j4 -l4

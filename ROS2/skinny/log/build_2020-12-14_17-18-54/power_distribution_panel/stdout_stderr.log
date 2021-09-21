@@ -1,0 +1,34 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/power_distribution_panel_node.dir/src/power_distribution_panel_node.cpp.o[0m
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:24:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   24 |  [01;31m[Kros[m[K::init(argc,argv,"power_distribution_panel_node");
+      |  [01;31m[K^~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:25:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   25 |  [01;31m[Kros[m[K::NodeHandle nodeHandle;
+      |  [01;31m[K^~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:26:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   26 |  [01;31m[Kros[m[K::Publisher publisher=nodeHandle.advertise<messages::Power>("power",1);
+      |  [01;31m[K^~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:27:12:[m[K [01;31m[Kerror: [m[K‘[01m[KPower[m[K’ is not a member of ‘[01m[Kmessages[m[K’; did you mean ‘[01m[Kmessages::msg::Power[m[K’?
+   27 |  messages::[01;31m[KPower[m[K power;
+      |            [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/power.hpp:7[m[K,
+                 from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:19[m[K:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/detail/power__struct.hpp:345:7:[m[K [01;36m[Knote: [m[K‘[01m[Kmessages::msg::Power[m[K’ declared here
+  345 | using [01;36m[KPower[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:59:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   59 |  while([01;31m[Kros[m[K::ok()){
+      |        [01;31m[K^~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:67:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kpower[m[K’ was not declared in this scope
+   67 |    [01;31m[Kpower[m[K.voltage=pdp.getVoltage();
+      |    [01;31m[K^~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:85:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope
+   85 |    [01;31m[Kpublisher[m[K.publish(power);
+      |    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/power_distribution_panel/src/power_distribution_panel_node.cpp:88:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   88 |   [01;31m[Kros[m[K::spinOnce();
+      |   [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/power_distribution_panel_node.dir/build.make:63: CMakeFiles/power_distribution_panel_node.dir/src/power_distribution_panel_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/power_distribution_panel_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

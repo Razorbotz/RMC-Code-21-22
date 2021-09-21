@@ -1,0 +1,37 @@
+[0.110s] Invoking command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/logic': AMENT_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent LD_LIBRARY_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/logic -- -j4 -l4
+[0.381s] [ 25%] [32mBuilding CXX object CMakeFiles/logic_node.dir/src/Automation.cpp.o[0m
+[4.496s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:[m[K In member function ‘[01m[KEulerAngles Automation::toEulerAngles(Quaternion)[m[K’:
+[4.497s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:43:24:[m[K [01;31m[Kerror: [m[K‘[01m[Katan2[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[4.498s]      angles.roll = std::[01;31m[Katan2[m[K(sinr_cosp, cosr_cosp);
+[4.499s]                         [01;31m[K^~~~~[m[K
+[4.500s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:48:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcopysign[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[4.500s]          angles.pitch = std::[01;31m[Kcopysign[m[K(M_PI / 2, sinp); // use 90 degrees if out of range
+[4.501s]                              [01;31m[K^~~~~~~~[m[K
+[4.501s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:48:29:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcopy_n[m[K’
+[4.502s]          angles.pitch = std::[01;36m[Kcopysign[m[K(M_PI / 2, sinp); // use 90 degrees if out of range
+[4.503s]                              [01;36m[K^~~~~~~~[m[K
+[4.504s]                              [32m[Kcopy_n[m[K
+[4.504s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:48:38:[m[K [01;31m[Kerror: [m[K‘[01m[KM_PI[m[K’ was not declared in this scope
+[4.505s]          angles.pitch = std::copysign([01;31m[KM_PI[m[K / 2, sinp); // use 90 degrees if out of range
+[4.505s]                                       [01;31m[K^~~~[m[K
+[4.506s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:48:38:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KP_PID[m[K’
+[4.506s]          angles.pitch = std::copysign([01;36m[KM_PI[m[K / 2, sinp); // use 90 degrees if out of range
+[4.507s]                                       [01;36m[K^~~~[m[K
+[4.508s]                                       [32m[KP_PID[m[K
+[4.508s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:50:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kasin[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[4.508s]          angles.pitch = std::[01;31m[Kasin[m[K(sinp);
+[4.509s]                              [01;31m[K^~~~[m[K
+[4.509s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:50:29:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kwcin[m[K’
+[4.510s]          angles.pitch = std::[01;36m[Kasin[m[K(sinp);
+[4.510s]                              [01;36m[K^~~~[m[K
+[4.511s]                              [32m[Kwcin[m[K
+[4.511s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp:55:23:[m[K [01;31m[Kerror: [m[K‘[01m[Katan2[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[4.512s]      angles.yaw = std::[01;31m[Katan2[m[K(siny_cosp, cosy_cosp);
+[4.512s]                        [01;31m[K^~~~~[m[K
+[6.599s] CMakeFiles/logic_node.dir/build.make:86: recipe for target 'CMakeFiles/logic_node.dir/src/Automation.cpp.o' failed
+[6.600s] make[2]: *** [CMakeFiles/logic_node.dir/src/Automation.cpp.o] Error 1
+[6.600s] CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/logic_node.dir/all' failed
+[6.601s] make[1]: *** [CMakeFiles/logic_node.dir/all] Error 2
+[6.601s] make: *** [all] Error 2
+[6.602s] Makefile:140: recipe for target 'all' failed
+[6.612s] Invoked command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/logic' returned '2': AMENT_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:/opt/ros/eloquent LD_LIBRARY_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/logic -- -j4 -l4

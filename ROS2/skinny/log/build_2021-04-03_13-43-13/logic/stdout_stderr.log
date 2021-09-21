@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target logic_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/logic_node.dir/src/logic_node.cpp.o[0m
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:[m[K In function ‘[01m[Kvoid keyboardCallback(messages::msg::KeyState_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:123:28:[m[K [01;31m[Kerror: [m[K‘[01m[KKeyState[m[K’ was not declared in this scope
+     std::cout << "Key " << [01;31m[KKeyState[m[K->key << " " << hatState->state << std::endl;
+                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:123:28:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state.hpp:7:0[m[K,
+                 from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:13[m[K:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__struct.hpp:136:49:[m[K [01;36m[Knote: [m[K  ‘[01m[Kmessages::msg::KeyState[m[K’
+   messages::msg::KeyState_<std::allocator<void>>[01;36m[K;[m[K
+                                                 [01;36m[K^[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:123:52:[m[K [01;31m[Kerror: [m[K‘[01m[KhatState[m[K’ was not declared in this scope
+     std::cout << "Key " << KeyState->key << " " << [01;31m[KhatState[m[K->state << std::endl;
+                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:123:52:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KkeyState[m[K’
+     std::cout << "Key " << KeyState->key << " " << [01;36m[KhatState[m[K->state << std::endl;
+                                                    [01;36m[K^~~~~~~~[m[K
+                                                    [32m[KkeyState[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:122:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KkeyState[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void keyboardCallback(const messages::msg::KeyState::SharedPtr [01;35m[KkeyState[m[K){
+                                                                [01;35m[K^~~~~~~~[m[K
+CMakeFiles/logic_node.dir/build.make:62: recipe for target 'CMakeFiles/logic_node.dir/src/logic_node.cpp.o' failed
+make[2]: *** [CMakeFiles/logic_node.dir/src/logic_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/logic_node.dir/all] Error 2
+CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/logic_node.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

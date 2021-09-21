@@ -1,0 +1,11 @@
+int32 deviceID
+float32 busVoltage
+float32 outputCurrent
+float32 outputVoltage
+float32 outputPercent
+float32 temperature
+int32 sensorPosition
+int32 sensorVelocity
+int32 closedLoopError 
+int32 integralAccumulator
+int32 errorDerivative

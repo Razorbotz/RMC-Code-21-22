@@ -1,0 +1,51 @@
+[0.092s] Invoking command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon': AMENT_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/talon -- -j4 -l4
+[0.258s] [35m[1mScanning dependencies of target talon_node[0m
+[0.375s] [ 50%] [32mBuilding CXX object CMakeFiles/talon_node.dir/src/talon_node.cpp.o[0m
+[5.885s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:[m[K In function ‘[01m[Kvoid stopCallback(std_msgs::msg::Empty)[m[K’:
+[5.887s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:27:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kempty[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.888s]    27 | void stopCallback([01;35m[Kstd_msgs::msg::Empty empty[m[K){
+[5.888s]       |                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[5.889s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:[m[K In function ‘[01m[Kvoid goCallback(std_msgs::msg::Empty)[m[K’:
+[5.889s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:31:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kempty[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.890s]    31 | void goCallback([01;35m[Kstd_msgs::msg::Empty empty[m[K){
+[5.890s]       |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[5.960s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.960s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:169:12:[m[K [01;31m[Kerror: [m[K‘[01m[KTalonOut[m[K’ is not a member of ‘[01m[Kmessages[m[K’; did you mean ‘[01m[Kmessages::msg::TalonOut[m[K’?
+[5.961s]   169 |  messages::[01;31m[KTalonOut[m[K talonOut;
+[5.961s]       |            [01;31m[K^~~~~~~~[m[K
+[5.961s] In file included from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/talon_out.hpp:7[m[K,
+[5.962s]                  from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:18[m[K:
+[5.962s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/detail/talon_out__struct.hpp:261:7:[m[K [01;36m[Knote: [m[K‘[01m[Kmessages::msg::TalonOut[m[K’ declared here
+[5.962s]   261 | using [01;36m[KTalonOut[m[K =
+[5.963s]       |       [01;36m[K^~~~~~~~[m[K
+[6.012s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:175:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.013s]   175 |  [01;31m[Kros[m[K::Subscriber stopSubscriber=nodeHandle.subscribe("STOP",1,stopCallback);
+[6.013s]       |  [01;31m[K^~~[m[K
+[6.014s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:176:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.014s]   176 |  [01;31m[Kros[m[K::Subscriber goSubscriber=nodeHandle.subscribe("GO",1,goCallback);
+[6.014s]       |  [01;31m[K^~~[m[K
+[6.015s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:180:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.015s]   180 |         while([01;31m[Kros[m[K::ok()){
+[6.015s]       |               [01;31m[K^~~[m[K
+[6.024s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:198:4:[m[K [01;31m[Kerror: [m[K‘[01m[KtalonOut[m[K’ was not declared in this scope
+[6.024s]   198 |    [01;31m[KtalonOut[m[K.deviceID=deviceID;
+[6.025s]       |    [01;31m[K^~~~~~~~[m[K
+[6.025s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:210:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<messages::msg::TalonOut_<std::allocator<void> >, std::allocator<void> > >[m[K’ has no member named ‘[01m[Kpublish[m[K’
+[6.026s]   210 |    talonOutPublisher.[01;31m[Kpublish[m[K(talonOut);
+[6.026s]       |                      [01;31m[K^~~~~~~[m[K
+[6.027s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:188:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisInverted[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.027s]   188 |    bool [01;35m[KisInverted[m[K=talonSRX->GetInverted();
+[6.027s]       |         [01;35m[K^~~~~~~~~~[m[K
+[6.029s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:250:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[6.029s]   250 |   [01;31m[Kros[m[K::spinOnce();
+[6.029s]       |   [01;31m[K^~~[m[K
+[6.030s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:144:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KkSlotIdx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.030s]   144 |  int [01;35m[KkSlotIdx[m[K=0;
+[6.031s]       |      [01;35m[K^~~~~~~~[m[K
+[6.031s] [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/talon/src/talon_node.cpp:167:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KstatusFrame[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.031s]   167 |  StatusFrame [01;35m[KstatusFrame[m[K;
+[6.031s]       |              [01;35m[K^~~~~~~~~~~[m[K
+[12.126s] make[2]: *** [CMakeFiles/talon_node.dir/build.make:63: CMakeFiles/talon_node.dir/src/talon_node.cpp.o] Error 1
+[12.127s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/talon_node.dir/all] Error 2
+[12.128s] make: *** [Makefile:141: all] Error 2
+[12.134s] Invoked command in '/home/team/SoftwareDevelopment/ROS2/skinny/build/talon' returned '2': AMENT_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/team/SoftwareDevelopment/ROS2/skinny/build/talon -- -j4 -l4

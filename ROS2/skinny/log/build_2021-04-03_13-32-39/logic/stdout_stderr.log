@@ -1,0 +1,67 @@
+[35m[1mScanning dependencies of target logic_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/logic_node.dir/src/logic_node.cpp.o[0m
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:121:44:[m[K [01;31m[Kerror: [m[K‘[01m[KKeyState[m[K’ in namespace ‘[01m[Kmessages::msg[m[K’ does not name a type
+ void keyboardCallback(const messages::msg::[01;31m[KKeyState[m[K::SharedPtr keyState){
+                                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:121:64:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[KkeyState[m[K’
+ void keyboardCallback(const messages::msg::KeyState::SharedPtr [01;31m[KkeyState[m[K){
+                                                                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:121:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KkeyState[m[K’
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:121:64:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KkeyState[m[K’
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:146:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> >, std::allocator<void> >::publish(double)[m[K’
+             driveLeftSpeedPublisher->publish(.05[01;31m[K)[m[K;
+                                                 [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node_interfaces/node_topics_interface.hpp:26:0[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:55[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+                 from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:3[m[K:
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<std_msgs::msg::Float32_<std::allocator<void> > >]
+   [01;36m[Kpublish[m[K(std::unique_ptr<MessageT, MessageDeleter> msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kstd::unique_ptr<std_msgs::msg::Float32_<std::allocator<void> >, std::default_delete<std_msgs::msg::Float32_<std::allocator<void> > > >[m[K’
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const MessageT&) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+   [01;36m[Kpublish[m[K(const MessageT & msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst std_msgs::msg::Float32_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_t]
+   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst rcl_serialized_message_t& {aka const rcutils_uint8_array_t&}[m[K’
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<MessageT, AllocatorT>&&) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Krclcpp::LoanedMessage<std_msgs::msg::Float32_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:147:50:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> >, std::allocator<void> >::publish(double)[m[K’
+             driveRightSpeedPublisher->publish(.05[01;31m[K)[m[K;
+                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node_interfaces/node_topics_interface.hpp:26:0[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:55[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+                 from [01m[K/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp:3[m[K:
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<std_msgs::msg::Float32_<std::allocator<void> > >]
+   [01;36m[Kpublish[m[K(std::unique_ptr<MessageT, MessageDeleter> msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kstd::unique_ptr<std_msgs::msg::Float32_<std::allocator<void> >, std::default_delete<std_msgs::msg::Float32_<std::allocator<void> > > >[m[K’
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const MessageT&) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+   [01;36m[Kpublish[m[K(const MessageT & msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst std_msgs::msg::Float32_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_t]
+   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst rcl_serialized_message_t& {aka const rcutils_uint8_array_t&}[m[K’
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<MessageT, AllocatorT>&&) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Krclcpp::LoanedMessage<std_msgs::msg::Float32_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+CMakeFiles/logic_node.dir/build.make:62: recipe for target 'CMakeFiles/logic_node.dir/src/logic_node.cpp.o' failed
+make[2]: *** [CMakeFiles/logic_node.dir/src/logic_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/logic_node.dir/all] Error 2
+make: *** [all] Error 2
+CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/logic_node.dir/all' failed
+Makefile:140: recipe for target 'all' failed
