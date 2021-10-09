@@ -1,14 +1,17 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
-PROJECT(zed_tracking)
+cmake_minimum_required(VERSION 3.5)
+project(zed_tracking)
 
 if(NOT CMAKE_CXX_STANDARD)
-    set(CMAKE_CXX_STANDARD 14)
+	set(CMAKE_CXX_STANDARD 14)
 endif()
 
 option(LINK_SHARED_ZED "Link with the ZED SDK shared executable" ON)
 
-if (NOT LINK_SHARED_ZED AND MSVC)
-    message(FATAL_ERROR "LINK_SHARED_ZED OFF : ZED SDK static libraries not available on Windows")
+if(NOT LINK_SHARED_ZED AND MSVC)
+	message(
+		FATAL_ERROR
+			"LINK_SHARED_ZED OFF : ZED SDK static libraries not available on Windows"
+	)
 endif()
 
 if(COMMAND cmake_policy)
@@ -16,7 +19,7 @@ if(COMMAND cmake_policy)
 	cmake_policy(SET CMP0015 OLD)
 endif(COMMAND cmake_policy)
 
-SET(EXECUTABLE_OUTPUT_PATH ".")
+set(EXECUTABLE_OUTPUT_PATH ".")
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
@@ -36,28 +39,22 @@ link_directories(${ZED_LIBRARY_DIR})
 link_directories(${OpenCV_LIBRARY_DIRS})
 link_directories(${CUDA_LIBRARY_DIRS})
 
-FILE(GLOB_RECURSE SRC_FILES src/*.cpp)
-FILE(GLOB_RECURSE HDR_FILES include/*.hpp)
+file(GLOB_RECURSE SRC_FILES src/*.cpp)
+file(GLOB_RECURSE HDR_FILES include/*.hpp)
 
-ADD_EXECUTABLE(${PROJECT_NAME}_node ${HDR_FILES} ${SRC_FILES})
+add_executable(${PROJECT_NAME}_node ${HDR_FILES} ${SRC_FILES})
 add_definitions(-std=c++11 -O3)
 
-if (LINK_SHARED_ZED)
-    SET(ZED_LIBS ${ZED_LIBRARIES} ${CUDA_CUDA_LIBRARY} ${CUDA_CUDART_LIBRARY} ${CUDA_NPP_LIBRARIES_ZED})
+if(LINK_SHARED_ZED)
+	set(ZED_LIBS ${ZED_LIBRARIES} ${CUDA_CUDA_LIBRARY} ${CUDA_CUDART_LIBRARY}
+				 ${CUDA_NPP_LIBRARIES_ZED})
 else()
-    SET(ZED_LIBS ${ZED_STATIC_LIBRARIES} ${CUDA_CUDA_LIBRARY} ${CUDA_LIBRARY})
+	set(ZED_LIBS ${ZED_STATIC_LIBRARIES} ${CUDA_CUDA_LIBRARY} ${CUDA_LIBRARY})
 endif()
 
-TARGET_LINK_LIBRARIES(${PROJECT_NAME}_node ${ZED_LIBS} ${OpenCV_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}_node ${ZED_LIBS} ${OpenCV_LIBRARIES})
 
-install(TARGETS ${PROJECT_NAME}_node
-    DESTINATION lib/${PROJECT_NAME}
-)
+install(TARGETS ${PROJECT_NAME}_node DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
-ament_target_dependencies(${PROJECT_NAME}_node
-        rclcpp
-        std_msgs
-        messages
-)
-
+ament_target_dependencies(${PROJECT_NAME}_node rclcpp std_msgs messages)
