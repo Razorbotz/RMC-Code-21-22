@@ -1,2 +1,0 @@
-int32 number 
-int32 state
