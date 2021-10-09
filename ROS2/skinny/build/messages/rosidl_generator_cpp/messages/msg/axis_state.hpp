@@ -7,4 +7,4 @@
 #include "messages/msg/axis_state__struct.hpp"
 #include "messages/msg/axis_state__traits.hpp"
 
-#endif  // MESSAGES__MSG__AXIS_STATE_HPP_
+#endif // MESSAGES__MSG__AXIS_STATE_HPP_

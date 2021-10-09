@@ -7,4 +7,4 @@
 #include "messages/msg/zed_position__struct.hpp"
 #include "messages/msg/zed_position__traits.hpp"
 
-#endif  // MESSAGES__MSG__ZED_POSITION_HPP_
+#endif // MESSAGES__MSG__ZED_POSITION_HPP_

@@ -7,4 +7,4 @@
 #include "messages/msg/key_state__struct.hpp"
 #include "messages/msg/key_state__traits.hpp"
 
-#endif  // MESSAGES__MSG__KEY_STATE_HPP_
+#endif // MESSAGES__MSG__KEY_STATE_HPP_

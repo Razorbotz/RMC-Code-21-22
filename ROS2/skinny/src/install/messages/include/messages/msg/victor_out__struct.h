@@ -6,38 +6,34 @@
 #define MESSAGES__MSG__VICTOR_OUT__STRUCT_H_
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
 
-
 // Constants defined in the message
 
 // Struct defined in msg/VictorOut in the package messages.
-typedef struct messages__msg__VictorOut
-{
-  int32_t device_id;
-  float bus_voltage;
-  float output_voltage;
-  float output_percent;
+typedef struct messages__msg__VictorOut {
+	int32_t device_id;
+	float bus_voltage;
+	float output_voltage;
+	float output_percent;
 } messages__msg__VictorOut;
 
 // Struct for a sequence of messages__msg__VictorOut.
-typedef struct messages__msg__VictorOut__Sequence
-{
-  messages__msg__VictorOut * data;
-  /// The number of valid items in data
-  size_t size;
-  /// The number of allocated items in data
-  size_t capacity;
+typedef struct messages__msg__VictorOut__Sequence {
+	messages__msg__VictorOut* data;
+	/// The number of valid items in data
+	size_t size;
+	/// The number of allocated items in data
+	size_t capacity;
 } messages__msg__VictorOut__Sequence;
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // MESSAGES__MSG__VICTOR_OUT__STRUCT_H_
+#endif // MESSAGES__MSG__VICTOR_OUT__STRUCT_H_

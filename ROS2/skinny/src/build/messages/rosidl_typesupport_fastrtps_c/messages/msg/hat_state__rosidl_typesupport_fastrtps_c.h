@@ -4,33 +4,32 @@
 #ifndef MESSAGES__MSG__HAT_STATE__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
 #define MESSAGES__MSG__HAT_STATE__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
 
-
-#include <stddef.h>
+#include "messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
 #include "rosidl_generator_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+#include <stddef.h>
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_messages
-size_t get_serialized_size_messages__msg__HatState(
-  const void * untyped_ros_message,
-  size_t current_alignment);
+	size_t
+	get_serialized_size_messages__msg__HatState(
+		const void* untyped_ros_message,
+		size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_messages
-size_t max_serialized_size_messages__msg__HatState(
-  bool & full_bounded,
-  size_t current_alignment);
+	size_t
+	max_serialized_size_messages__msg__HatState(
+		bool& full_bounded,
+		size_t current_alignment);
 
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_messages
-const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, messages, msg, HatState)();
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_messages const rosidl_message_type_support_t*
+	ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, messages, msg, HatState)();
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // MESSAGES__MSG__HAT_STATE__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
+#endif // MESSAGES__MSG__HAT_STATE__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_

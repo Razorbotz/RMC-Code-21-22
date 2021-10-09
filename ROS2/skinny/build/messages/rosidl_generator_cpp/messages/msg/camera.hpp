@@ -7,4 +7,4 @@
 #include "messages/msg/camera__struct.hpp"
 #include "messages/msg/camera__traits.hpp"
 
-#endif  // MESSAGES__MSG__CAMERA_HPP_
+#endif // MESSAGES__MSG__CAMERA_HPP_

@@ -5,8 +5,8 @@
 #ifndef MESSAGES__MSG__JOYSTICK_COMMAND_H_
 #define MESSAGES__MSG__JOYSTICK_COMMAND_H_
 
-#include "messages/msg/joystick_command__struct.h"
 #include "messages/msg/joystick_command__functions.h"
+#include "messages/msg/joystick_command__struct.h"
 #include "messages/msg/joystick_command__type_support.h"
 
-#endif  // MESSAGES__MSG__JOYSTICK_COMMAND_H_
+#endif // MESSAGES__MSG__JOYSTICK_COMMAND_H_

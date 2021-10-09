@@ -5,8 +5,8 @@
 #ifndef MESSAGES__MSG__ZED_POSITION_H_
 #define MESSAGES__MSG__ZED_POSITION_H_
 
-#include "messages/msg/zed_position__struct.h"
 #include "messages/msg/zed_position__functions.h"
+#include "messages/msg/zed_position__struct.h"
 #include "messages/msg/zed_position__type_support.h"
 
-#endif  // MESSAGES__MSG__ZED_POSITION_H_
+#endif // MESSAGES__MSG__ZED_POSITION_H_

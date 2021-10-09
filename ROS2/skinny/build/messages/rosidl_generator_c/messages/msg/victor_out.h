@@ -5,8 +5,8 @@
 #ifndef MESSAGES__MSG__VICTOR_OUT_H_
 #define MESSAGES__MSG__VICTOR_OUT_H_
 
-#include "messages/msg/victor_out__struct.h"
 #include "messages/msg/victor_out__functions.h"
+#include "messages/msg/victor_out__struct.h"
 #include "messages/msg/victor_out__type_support.h"
 
-#endif  // MESSAGES__MSG__VICTOR_OUT_H_
+#endif // MESSAGES__MSG__VICTOR_OUT_H_

@@ -10,27 +10,25 @@
 #include <stdint.h>
 #include <type_traits>
 
-namespace rosidl_generator_traits
-{
+namespace rosidl_generator_traits {
 
-template<>
-inline const char * data_type<messages::msg::ZedPosition>()
-{
-  return "messages::msg::ZedPosition";
-}
+	template <>
+	inline const char* data_type<messages::msg::ZedPosition>() {
+		return "messages::msg::ZedPosition";
+	}
 
-template<>
-struct has_fixed_size<messages::msg::ZedPosition>
-  : std::integral_constant<bool, true> {};
+	template <>
+	struct has_fixed_size<messages::msg::ZedPosition>
+		: std::integral_constant<bool, true> {};
 
-template<>
-struct has_bounded_size<messages::msg::ZedPosition>
-  : std::integral_constant<bool, true> {};
+	template <>
+	struct has_bounded_size<messages::msg::ZedPosition>
+		: std::integral_constant<bool, true> {};
 
-template<>
-struct is_message<messages::msg::ZedPosition>
-  : std::true_type {};
+	template <>
+	struct is_message<messages::msg::ZedPosition>
+		: std::true_type {};
 
-}  // namespace rosidl_generator_traits
+} // namespace rosidl_generator_traits
 
-#endif  // MESSAGES__MSG__ZED_POSITION__TRAITS_HPP_
+#endif // MESSAGES__MSG__ZED_POSITION__TRAITS_HPP_

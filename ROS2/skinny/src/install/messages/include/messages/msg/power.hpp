@@ -7,4 +7,4 @@
 #include "messages/msg/power__struct.hpp"
 #include "messages/msg/power__traits.hpp"
 
-#endif  // MESSAGES__MSG__POWER_HPP_
+#endif // MESSAGES__MSG__POWER_HPP_

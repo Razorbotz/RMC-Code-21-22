@@ -6,40 +6,36 @@
 #define MESSAGES__MSG__ZED_POSITION__STRUCT_H_
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
 
-
 // Constants defined in the message
 
 // Struct defined in msg/ZedPosition in the package messages.
-typedef struct messages__msg__ZedPosition
-{
-  float x;
-  float y;
-  float z;
-  float ax;
-  float ay;
-  float az;
+typedef struct messages__msg__ZedPosition {
+	float x;
+	float y;
+	float z;
+	float ax;
+	float ay;
+	float az;
 } messages__msg__ZedPosition;
 
 // Struct for a sequence of messages__msg__ZedPosition.
-typedef struct messages__msg__ZedPosition__Sequence
-{
-  messages__msg__ZedPosition * data;
-  /// The number of valid items in data
-  size_t size;
-  /// The number of allocated items in data
-  size_t capacity;
+typedef struct messages__msg__ZedPosition__Sequence {
+	messages__msg__ZedPosition* data;
+	/// The number of valid items in data
+	size_t size;
+	/// The number of allocated items in data
+	size_t capacity;
 } messages__msg__ZedPosition__Sequence;
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // MESSAGES__MSG__ZED_POSITION__STRUCT_H_
+#endif // MESSAGES__MSG__ZED_POSITION__STRUCT_H_

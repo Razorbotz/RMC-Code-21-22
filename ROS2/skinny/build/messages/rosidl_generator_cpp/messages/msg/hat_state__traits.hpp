@@ -10,27 +10,25 @@
 #include <stdint.h>
 #include <type_traits>
 
-namespace rosidl_generator_traits
-{
+namespace rosidl_generator_traits {
 
-template<>
-inline const char * data_type<messages::msg::HatState>()
-{
-  return "messages::msg::HatState";
-}
+	template <>
+	inline const char* data_type<messages::msg::HatState>() {
+		return "messages::msg::HatState";
+	}
 
-template<>
-struct has_fixed_size<messages::msg::HatState>
-  : std::integral_constant<bool, true> {};
+	template <>
+	struct has_fixed_size<messages::msg::HatState>
+		: std::integral_constant<bool, true> {};
 
-template<>
-struct has_bounded_size<messages::msg::HatState>
-  : std::integral_constant<bool, true> {};
+	template <>
+	struct has_bounded_size<messages::msg::HatState>
+		: std::integral_constant<bool, true> {};
 
-template<>
-struct is_message<messages::msg::HatState>
-  : std::true_type {};
+	template <>
+	struct is_message<messages::msg::HatState>
+		: std::true_type {};
 
-}  // namespace rosidl_generator_traits
+} // namespace rosidl_generator_traits
 
-#endif  // MESSAGES__MSG__HAT_STATE__TRAITS_HPP_
+#endif // MESSAGES__MSG__HAT_STATE__TRAITS_HPP_

@@ -6,21 +6,18 @@
 #define MESSAGES__MSG__POWER__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
-
+#include "messages/msg/rosidl_typesupport_introspection_c__visibility_control.h"
 #include "rosidl_generator_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "messages/msg/rosidl_typesupport_introspection_c__visibility_control.h"
 
-ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_messages
-const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, messages, msg, Power)();
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_messages const rosidl_message_type_support_t*
+	ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, messages, msg, Power)();
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // MESSAGES__MSG__POWER__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
+#endif // MESSAGES__MSG__POWER__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_

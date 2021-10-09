@@ -6,36 +6,32 @@
 #define MESSAGES__MSG__KEY_STATE__STRUCT_H_
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
 
-
 // Constants defined in the message
 
 // Struct defined in msg/KeyState in the package messages.
-typedef struct messages__msg__KeyState
-{
-  uint16_t key;
-  uint8_t state;
+typedef struct messages__msg__KeyState {
+	uint16_t key;
+	uint8_t state;
 } messages__msg__KeyState;
 
 // Struct for a sequence of messages__msg__KeyState.
-typedef struct messages__msg__KeyState__Sequence
-{
-  messages__msg__KeyState * data;
-  /// The number of valid items in data
-  size_t size;
-  /// The number of allocated items in data
-  size_t capacity;
+typedef struct messages__msg__KeyState__Sequence {
+	messages__msg__KeyState* data;
+	/// The number of valid items in data
+	size_t size;
+	/// The number of allocated items in data
+	size_t capacity;
 } messages__msg__KeyState__Sequence;
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // MESSAGES__MSG__KEY_STATE__STRUCT_H_
+#endif // MESSAGES__MSG__KEY_STATE__STRUCT_H_

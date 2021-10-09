@@ -7,4 +7,4 @@
 #include "messages/msg/button_state__struct.hpp"
 #include "messages/msg/button_state__traits.hpp"
 
-#endif  // MESSAGES__MSG__BUTTON_STATE_HPP_
+#endif // MESSAGES__MSG__BUTTON_STATE_HPP_

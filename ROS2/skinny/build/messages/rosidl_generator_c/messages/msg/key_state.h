@@ -5,8 +5,8 @@
 #ifndef MESSAGES__MSG__KEY_STATE_H_
 #define MESSAGES__MSG__KEY_STATE_H_
 
-#include "messages/msg/key_state__struct.h"
 #include "messages/msg/key_state__functions.h"
+#include "messages/msg/key_state__struct.h"
 #include "messages/msg/key_state__type_support.h"
 
-#endif  // MESSAGES__MSG__KEY_STATE_H_
+#endif // MESSAGES__MSG__KEY_STATE_H_

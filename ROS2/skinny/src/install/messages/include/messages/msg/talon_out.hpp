@@ -7,4 +7,4 @@
 #include "messages/msg/talon_out__struct.hpp"
 #include "messages/msg/talon_out__traits.hpp"
 
-#endif  // MESSAGES__MSG__TALON_OUT_HPP_
+#endif // MESSAGES__MSG__TALON_OUT_HPP_

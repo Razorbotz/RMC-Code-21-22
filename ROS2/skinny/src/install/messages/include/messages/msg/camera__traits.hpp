@@ -10,27 +10,25 @@
 #include <stdint.h>
 #include <type_traits>
 
-namespace rosidl_generator_traits
-{
+namespace rosidl_generator_traits {
 
-template<>
-inline const char * data_type<messages::msg::Camera>()
-{
-  return "messages::msg::Camera";
-}
+	template <>
+	inline const char* data_type<messages::msg::Camera>() {
+		return "messages::msg::Camera";
+	}
 
-template<>
-struct has_fixed_size<messages::msg::Camera>
-  : std::integral_constant<bool, false> {};
+	template <>
+	struct has_fixed_size<messages::msg::Camera>
+		: std::integral_constant<bool, false> {};
 
-template<>
-struct has_bounded_size<messages::msg::Camera>
-  : std::integral_constant<bool, false> {};
+	template <>
+	struct has_bounded_size<messages::msg::Camera>
+		: std::integral_constant<bool, false> {};
 
-template<>
-struct is_message<messages::msg::Camera>
-  : std::true_type {};
+	template <>
+	struct is_message<messages::msg::Camera>
+		: std::true_type {};
 
-}  // namespace rosidl_generator_traits
+} // namespace rosidl_generator_traits
 
-#endif  // MESSAGES__MSG__CAMERA__TRAITS_HPP_
+#endif // MESSAGES__MSG__CAMERA__TRAITS_HPP_

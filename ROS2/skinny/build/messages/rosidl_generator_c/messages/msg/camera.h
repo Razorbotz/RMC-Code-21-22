@@ -5,8 +5,8 @@
 #ifndef MESSAGES__MSG__CAMERA_H_
 #define MESSAGES__MSG__CAMERA_H_
 
-#include "messages/msg/camera__struct.h"
 #include "messages/msg/camera__functions.h"
+#include "messages/msg/camera__struct.h"
 #include "messages/msg/camera__type_support.h"
 
-#endif  // MESSAGES__MSG__CAMERA_H_
+#endif // MESSAGES__MSG__CAMERA_H_

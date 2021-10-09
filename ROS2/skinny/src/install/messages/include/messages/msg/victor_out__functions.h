@@ -6,15 +6,14 @@
 #define MESSAGES__MSG__VICTOR_OUT__FUNCTIONS_H_
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 #include <stdbool.h>
 #include <stdlib.h>
 
-#include "rosidl_generator_c/visibility_control.h"
 #include "messages/msg/rosidl_generator_c__visibility_control.h"
+#include "rosidl_generator_c/visibility_control.h"
 
 #include "messages/msg/victor_out__struct.h"
 
@@ -31,17 +30,15 @@ extern "C"
  * to allocate and initialize the message.
  * \return true if initialization was successful, otherwise false
  */
-ROSIDL_GENERATOR_C_PUBLIC_messages
-bool
-messages__msg__VictorOut__init(messages__msg__VictorOut * msg);
+ROSIDL_GENERATOR_C_PUBLIC_messages bool
+messages__msg__VictorOut__init(messages__msg__VictorOut* msg);
 
 /// Finalize msg/VictorOut message.
 /**
  * \param[in,out] msg The allocated message pointer.
  */
-ROSIDL_GENERATOR_C_PUBLIC_messages
-void
-messages__msg__VictorOut__fini(messages__msg__VictorOut * msg);
+ROSIDL_GENERATOR_C_PUBLIC_messages void
+messages__msg__VictorOut__fini(messages__msg__VictorOut* msg);
 
 /// Create msg/VictorOut message.
 /**
@@ -52,8 +49,8 @@ messages__msg__VictorOut__fini(messages__msg__VictorOut * msg);
  * otherwise NULL
  */
 ROSIDL_GENERATOR_C_PUBLIC_messages
-messages__msg__VictorOut *
-messages__msg__VictorOut__create();
+	messages__msg__VictorOut*
+	messages__msg__VictorOut__create();
 
 /// Destroy msg/VictorOut message.
 /**
@@ -62,10 +59,8 @@ messages__msg__VictorOut__create();
  * and frees the memory of the message.
  * \param[in,out] msg The allocated message pointer.
  */
-ROSIDL_GENERATOR_C_PUBLIC_messages
-void
-messages__msg__VictorOut__destroy(messages__msg__VictorOut * msg);
-
+ROSIDL_GENERATOR_C_PUBLIC_messages void
+messages__msg__VictorOut__destroy(messages__msg__VictorOut* msg);
 
 /// Initialize array of msg/VictorOut messages.
 /**
@@ -78,9 +73,8 @@ messages__msg__VictorOut__destroy(messages__msg__VictorOut * msg);
  * If the array pointer is valid and the size is zero it is guaranteed
  # to return true.
  */
-ROSIDL_GENERATOR_C_PUBLIC_messages
-bool
-messages__msg__VictorOut__Sequence__init(messages__msg__VictorOut__Sequence * array, size_t size);
+ROSIDL_GENERATOR_C_PUBLIC_messages bool
+messages__msg__VictorOut__Sequence__init(messages__msg__VictorOut__Sequence* array, size_t size);
 
 /// Finalize array of msg/VictorOut messages.
 /**
@@ -90,9 +84,8 @@ messages__msg__VictorOut__Sequence__init(messages__msg__VictorOut__Sequence * ar
  * elements.
  * \param[in,out] array The initialized array pointer.
  */
-ROSIDL_GENERATOR_C_PUBLIC_messages
-void
-messages__msg__VictorOut__Sequence__fini(messages__msg__VictorOut__Sequence * array);
+ROSIDL_GENERATOR_C_PUBLIC_messages void
+messages__msg__VictorOut__Sequence__fini(messages__msg__VictorOut__Sequence* array);
 
 /// Create array of msg/VictorOut messages.
 /**
@@ -102,8 +95,8 @@ messages__msg__VictorOut__Sequence__fini(messages__msg__VictorOut__Sequence * ar
  * \return The pointer to the initialized array if successful, otherwise NULL
  */
 ROSIDL_GENERATOR_C_PUBLIC_messages
-messages__msg__VictorOut__Sequence *
-messages__msg__VictorOut__Sequence__create(size_t size);
+	messages__msg__VictorOut__Sequence*
+	messages__msg__VictorOut__Sequence__create(size_t size);
 
 /// Destroy array of msg/VictorOut messages.
 /**
@@ -113,12 +106,11 @@ messages__msg__VictorOut__Sequence__create(size_t size);
  * and frees the memory of the array.
  * \param[in,out] array The initialized array pointer.
  */
-ROSIDL_GENERATOR_C_PUBLIC_messages
-void
-messages__msg__VictorOut__Sequence__destroy(messages__msg__VictorOut__Sequence * array);
+ROSIDL_GENERATOR_C_PUBLIC_messages void
+messages__msg__VictorOut__Sequence__destroy(messages__msg__VictorOut__Sequence* array);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // MESSAGES__MSG__VICTOR_OUT__FUNCTIONS_H_
+#endif // MESSAGES__MSG__VICTOR_OUT__FUNCTIONS_H_

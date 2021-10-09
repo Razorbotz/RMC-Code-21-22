@@ -7,4 +7,4 @@
 #include "messages/msg/joystick_command__struct.hpp"
 #include "messages/msg/joystick_command__traits.hpp"
 
-#endif  // MESSAGES__MSG__JOYSTICK_COMMAND_HPP_
+#endif // MESSAGES__MSG__JOYSTICK_COMMAND_HPP_
