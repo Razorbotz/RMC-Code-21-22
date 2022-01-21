@@ -5,19 +5,25 @@ on:
   workflow_dispatch:
 
 jobs:
-
-  update:
-
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+    - name: Create local changes
+      run: |
+        git submodule update --init --recursive --remote
 
-      - run: git submodule update --recursive --remote
-
-      - uses: EndBug/add-and-commit@v7
-        with:
-          author_email: andrewburroughs17@gmail.com
-          author_name: "Andrew Burroughs"
-          message: "Updated Submodules"
-          
+    - name: Commit files
+      run: |
+        git config --local user.email "andrewburroughs17@gmail.com"
+        git config --local user.name "Andrew Burroughs"
+        git commit -m "Submodule Update" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: refs/heads/update
+        force: true
