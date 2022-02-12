@@ -29,6 +29,6 @@ jobs:
         force: true
     
     - name: Create Pull Request
-      run: gh pr create --base master --head update
+      run: gh pr create --base master --head update --fill
       env:
         GITHUB_TOKEN: ${{ secrets.ACTIONS_PAT }}
