@@ -27,3 +27,8 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: refs/heads/update
         force: true
+    
+    - name: Create Pull Request
+      run: gh pr create --base master --head update
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACTIONS_PAT }}
